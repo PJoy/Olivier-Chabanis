@@ -9,3 +9,8 @@ vendor
 wp-includes/
 .editorconfig
 lang/
+
+.DS_Store
+wp-content/.DS_Store
+wp-content/upgrade/
+wp-content/uploads/
