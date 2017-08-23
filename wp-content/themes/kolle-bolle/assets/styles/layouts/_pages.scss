@@ -3,4 +3,9 @@
   h1 {
     padding: 200px 30%;
   }
+  @media (max-width: 767px) {
+    h1 {
+      padding: 0;
+    }
+  }
 }
