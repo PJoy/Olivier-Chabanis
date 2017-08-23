@@ -1,6 +1,6 @@
 <header class="banner">
     <div class="container">
-        <nav class="nav-primary text-center">
+        <nav class="nav-primary text-center d-none d-md-block">
 			<?php
             $menu_elems = wp_get_nav_menu_items('Main');
             foreach ($menu_elems as $menu_elem) {
