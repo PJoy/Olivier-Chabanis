@@ -26,3 +26,9 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+function outpre($var) {
+	echo'<pre>';
+	var_dump($var);
+	echo'</pre>';
+}

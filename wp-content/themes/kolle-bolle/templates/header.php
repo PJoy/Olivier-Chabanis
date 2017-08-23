@@ -1,12 +1,12 @@
 <header class="banner">
-  <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    <nav class="nav-primary">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;
-      ?>
-    </nav>
-  </div>
+    <div class="container">
+        <nav class="nav-primary text-center">
+			<?php
+            $menu_elems = wp_get_nav_menu_items('Main');
+            foreach ($menu_elems as $menu_elem) {
+                echo '<a href="'.$menu_elem->url.'">'.$menu_elem->title.'</a>';
+            }
+			?>
+        </nav>
+    </div>
 </header>

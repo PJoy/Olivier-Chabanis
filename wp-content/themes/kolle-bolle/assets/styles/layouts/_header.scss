@@ -1,0 +1,13 @@
+header {
+  nav.nav-primary {
+    color: $blue;
+    text-transform: uppercase;
+    a {
+      padding: 0 20px;
+
+      &:hover {
+        text-decoration: overline underline;
+      }
+    }
+  }
+}
