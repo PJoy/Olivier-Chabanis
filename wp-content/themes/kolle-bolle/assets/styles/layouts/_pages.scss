@@ -9,3 +9,53 @@
     }
   }
 }
+
+.page-content {
+  .outer-content-block {
+    padding: 5px;
+    background: white;
+    .content-block {
+      //XL
+      @media (min-width: 1200px) {
+        height: 290px;
+      }
+      //LG
+      @media (max-width: 992px) {
+        height: 330px;
+      }
+      //MD
+      @media (max-width: 768px) {
+        height: 390px;
+      }
+
+      &.image-block {
+        z-index: 2;
+        .bg-color {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: $blue;
+          opacity: 0.3;
+          z-index: -1;
+        }
+        p, a {
+          color: white;
+          z-index: 1;
+        }
+      }
+      &.color-block {
+        background: blue;
+        p, a {
+          color: white;
+        }
+      }
+
+      &.image-block {
+        background-size: cover !important;
+        background-position: center !important;
+      }
+    }
+  }
+}
