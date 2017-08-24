@@ -15,6 +15,12 @@
     padding: 5px;
     background: white;
     .content-block {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+
+      color: $blue;
       //XL
       @media (min-width: 1200px) {
         height: 290px;
@@ -45,6 +51,7 @@
           z-index: 1;
         }
       }
+
       &.color-block {
         background: blue;
         p, a {

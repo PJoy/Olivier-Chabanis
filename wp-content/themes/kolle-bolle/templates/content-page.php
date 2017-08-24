@@ -12,7 +12,7 @@
 				? 'color-block'
 				: 'simple-block' );
 		?>
-		<div class="outer-content-block col-lg-6 col-xl-4 text-center">
+		<div class="outer-content-block col-lg-6 col-xl-4">
 			<div class="content-block <?php echo $class ?>" <?php if ($bg != '') echo 'style="background: url('.$bg.')"'?>>
 				<?php if ($link != '') echo '<a href="'.$link.'">'; ?>
 				<?php echo $block["texte"]?>
@@ -22,3 +22,7 @@
 		</div>
 	<?php } ?>
 </div>
+
+<script>
+
+</script>
