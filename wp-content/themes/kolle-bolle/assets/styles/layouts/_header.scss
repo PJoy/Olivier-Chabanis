@@ -2,11 +2,15 @@ header {
   nav.nav-primary {
     color: $blue;
     text-transform: uppercase;
+    margin: 150px 0 10px;
     a {
-      padding: 0 20px;
+      margin: 0 20px;
 
       &:hover {
-        text-decoration: overline underline;
+        text-decoration: none;
+        color: $blue;
+        border-top: 1px solid $blue;
+        border-bottom: 1px solid $blue;
       }
     }
   }
