@@ -15,12 +15,26 @@
     padding: 5px;
     background: white;
     .content-block {
+      color: $blue;
+
       display: flex;
       justify-content: center;
       flex-direction: column;
       text-align: center;
 
-      color: $blue;
+      &.font-bigger-lighter {
+        font-size: 32px;
+        font-weight: 100;
+      }
+      &.font-big-regular{
+        font-size: 24px;
+        font-weight: normal;
+      }
+      &.font-small-light{
+        font-size: 14px;
+        font-weight: 300;
+      }
+
       //XL
       @media (min-width: 1200px) {
         height: 290px;
@@ -34,7 +48,15 @@
         height: 390px;
       }
 
+      &.image-block,
+      &.color-block {
+        padding: 50px;
+      }
+
       &.image-block {
+        background-size: cover !important;
+        background-position: center !important;
+
         z-index: 2;
         .bg-color {
           position: absolute;
@@ -46,7 +68,7 @@
           opacity: 0.3;
           z-index: -1;
         }
-        p, a {
+        a {
           color: white;
           z-index: 1;
         }
@@ -54,14 +76,18 @@
 
       &.color-block {
         background: blue;
-        p, a {
+        a {
           color: white;
         }
       }
 
-      &.image-block {
-        background-size: cover !important;
-        background-position: center !important;
+      &.image-block:hover a,
+      &.color-block:hover a {
+        text-decoration: none;
+      }
+
+      &.image-block:hover a {
+        color: blue;
       }
     }
   }
