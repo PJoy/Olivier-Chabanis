@@ -1,10 +1,17 @@
 header {
+  .logo {
+    width: 30%;
+  }
+
   nav.nav-primary {
+    width: 70%;
     color: $blue;
     text-transform: uppercase;
-    margin: 150px 0 10px;
-    a {
-      margin: 0 20px;
+    margin: 70px 0 20px 0;
+
+    a.menu-elem {
+      font-size: 14px;
+      margin: 0 5px;
 
       &:hover {
         text-decoration: none;
