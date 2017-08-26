@@ -19,7 +19,19 @@
 @font-face {
   font-family: 'Assistant';
   src: url('../fonts/Assistant-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Assistant';
+  src: url('../fonts/Assistant-Bold.ttf') format('truetype');
   font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../fonts/MinionPro-Regular.otf');
+  font-weight: normal;
 }
 
 body {
