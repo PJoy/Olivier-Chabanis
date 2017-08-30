@@ -1,74 +1,22 @@
-<?php $blocks = get_field("contenu"); ?>
+<?php $blocks = get_field("blocs"); ?>
 
-<div class="page-content col-12 col-md-10 m-auto row">
-	<?php foreach ($blocks as $block) {
-		$bg = $block["image"]["url"];
-		$link = ($block["lien_interne"] != '')
-			? $block["lien_interne"]
-			: $block["lien_externe"];
+<div class="content-blocks-wrapper">
+	<?php foreach ($blocks as $block){
+		$hasImage = (strcmp($block["type"],"bloc image") == 0);
 
-		//CLASSES
-		$mainClass = ($bg != '')
-			? 'image-block'
-			: (($link != '')
-				? 'color-block'
-				: 'simple-block' );
-		$fontClass = ($block["type"] == "Lien")
-            ? 'bigger-lighter'
-            : ($block["type"] == "Texte court"
-                ? 'big-regular'
-                : 'small-light' );
+		$classes = '';
+		$classes .= ($hasImage ? 'image-block ' : 'text-block ');
+		$classes .= 'block-x-3-'.$block["taille_x_3"].' ';
+		$classes .= 'block-y-3-'.$block["taille_y_3"].' ';
+		$classes .= 'block-x-2-'.$block["taille_x_2"].' ';
+		$classes .= 'block-y-2-'.$block["taille_y_2"].' ';
+		$classes .= 'block-x-1-'.$block["taille_x_1"].' ';
+		$classes .= 'block-y-1-'.$block["taille_y_1"].' ';
 
-		switch ($block["dimensions"]){
-            case '1x1':
-                $widthClass = 'col-4';
-                $heightClass = "y-1";
-                break;
-            case '1x2':
-                $widthClass = 'col-8';
-                $heightClass = "y-1";
-                break;
-            case '1x3':
-                $widthClass = 'col-12';
-                $heightClass = "y-1";
-                break;
-            case '2x1':
-                $widthClass = 'col-4';
-                $heightClass = "y-2";
-                break;
-            case '2x2':
-                $widthClass = 'col-8';
-                $heightClass = "y-2";
-                break;
-            case '2x3':
-                $widthClass = 'col-12';
-                $heightClass = "y-2";
-                break;
-            case '3x1':
-                $widthClass = 'col-4';
-                $heightClass = "y-3";
-                break;
-            case '3x2':
-                $widthClass = 'col-8';
-                $heightClass = "y-3";
-                break;
-            case '3x3':
-                $widthClass = 'col-12';
-                $heightClass = "y-3";
-                break;
-        } ?>
+		?>
+		<div class="content-block <?php echo $classes; ?>" <?php if ($hasImage) echo 'style="background: url('.$block["image"].')"'?>>
 
-		<div class="outer-content-block <?php echo $widthClass.' '.$heightClass; ?>">
-			<div class="content-block <?php echo $mainClass.' font-'.$fontClass; ?>" <?php if ($bg != '') echo 'style="background: url('.$bg.')"'?>>
-				<?php if ($link != '') echo '<a href="'.$link.'">'; ?>
-				<?php echo $block["texte"]?>
-				<?php if ($link != '') echo '</a>'; ?>
-				<?php if ($bg != '') echo '<div class="bg-color"></div>' ?>
-			</div>
 		</div>
-	<?php } ?>
+		<?php
+	} ?>
 </div>
-
-<script>
-
-</script>
