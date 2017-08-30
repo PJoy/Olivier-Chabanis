@@ -1,24 +1,36 @@
 header {
-  .logo {
-    width: 30%;
-  }
+    position: relative;
+    width: 1000px;
+    height: 120px;
+    margin: 15px auto;
 
-  nav.nav-primary {
-    width: 70%;
-    color: $blue;
-    text-transform: uppercase;
-    margin: 70px 0 20px 0;
-
-    a.menu-elem {
-      font-size: 14px;
-      margin: 0 5px;
-
-      &:hover {
-        text-decoration: none;
-        color: $blue;
-        border-top: 1px solid $blue;
-        border-bottom: 1px solid $blue;
-      }
+    .logo {
+        background-position: left!important;
+        background-size: contain!important;
+        width: 500px;
+        height: 120px;
+        margin-right: 75px;
+        float: left;
     }
-  }
+
+    nav.nav-primary {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: $blue;
+        text-transform: uppercase;
+
+
+        a.menu-elem {
+            font-size: 13px;
+            margin-left: 10px;
+
+            &:hover {
+                text-decoration: none;
+                color: $blue;
+                border-top: 1px solid $blue;
+                border-bottom: 1px solid $blue;
+            }
+        }
+    }
 }

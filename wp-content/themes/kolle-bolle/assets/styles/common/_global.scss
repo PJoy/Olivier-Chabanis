@@ -43,3 +43,9 @@ h1 {
     text-align: center;
     color: white;
 }
+
+@media (min-width: 1200px) {
+    .wrap.container {
+        max-width: none!important;
+    }
+}
