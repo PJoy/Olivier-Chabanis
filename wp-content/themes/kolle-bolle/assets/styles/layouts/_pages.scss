@@ -14,21 +14,35 @@
     //TODO MEDIA QUERIES
     width: 960px;
     margin: 0 auto;
+    .content-block-outer {
+        .content-block {
+            float: left;
+            margin: 10px;
 
-    .content-block {
-        float: left;
-        margin: 10px;
+            &.image-block {
+                background-size: cover !important;
+                background-position: 50% !important;
+            }
 
-        &.image-block {
-            background-size: cover!important;
-            background-position: 50%!important;
+            &.block-x-3-1 {
+                width: 300px;
+            }
+            &.block-y-3-1 {
+                height: 300px;
+            }
+            &.block-x-3-2 {
+                width: 620px;
+            }
+            &.block-y-3-2 {
+                height: 620px;
+            }
+            &.block-x-3-3 {
+                width: 940px;
+            }
+            &.block-y-3-3 {
+                height: 940px;
+            }
         }
 
-        &.block-x-3-1 {
-            width: 300px;
-        }
-        &.block-y-3-1 {
-            height: 300px;
-        }
     }
 }
