@@ -1,119 +1,34 @@
 .page-header {
-  background-size: cover!important;
-  h1 {
-    padding: 200px 30%;
-  }
-  @media (max-width: 767px) {
+    background-size: cover!important;
     h1 {
-      padding: 0;
+        padding: 200px 30%;
     }
-  }
+    @media (max-width: 767px) {
+        h1 {
+            padding: 0;
+        }
+    }
 }
 
-.page-content {
-  .outer-content-block {
-    padding: 5px;
-    background: white;
-
-    //XL
-    @media (min-width: 1200px) {
-      &.y-1 {
-        height: 290px;
-      }
-      &.y-2 {
-        height: 580px;
-      }
-      &.y-3 {
-        height: 870px;
-      }
-    }
-    //LG
-    @media (max-width: 992px) {
-      &.y-1 {
-        height: 330px;
-      }
-      &.y-2 {
-        height: 660px;
-      }
-      &.y-3 {
-        height: 990px;
-      }
-    }
-    //MD
-    @media (max-width: 768px) {
-      &.y-1 {
-        height: 390px;
-      }
-      &.y-2 {
-        height: 780px;
-      }
-      &.y-3 {
-        height: 1170px;
-      }
-    }
+.content-blocks-wrapper {
+    //TODO MEDIA QUERIES
+    width: 960px;
+    margin: 0 auto;
 
     .content-block {
-      color: $blue;
+        float: left;
+        margin: 10px;
 
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-
-      &.font-bigger-lighter {
-        font-size: 32px;
-        font-weight: 100;
-      }
-      &.font-big-regular{
-        font-size: 24px;
-        font-weight: normal;
-      }
-      &.font-small-light{
-        font-size: 14px;
-        font-weight: 300;
-      }
-
-      &.image-block,
-      &.color-block {
-        padding: 50px;
-      }
-
-      &.image-block {
-        background-size: cover !important;
-        background-position: center !important;
-
-        z-index: 2;
-        .bg-color {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background: $blue;
-          opacity: 0.3;
-          z-index: -1;
+        &.image-block {
+            background-size: cover!important;
+            background-position: 50%!important;
         }
-        a {
-          color: white;
-          z-index: 1;
+
+        &.block-x-3-1 {
+            width: 300px;
         }
-      }
-
-      &.color-block {
-        background: blue;
-        a {
-          color: white;
+        &.block-y-3-1 {
+            height: 300px;
         }
-      }
-
-      &.image-block:hover a,
-      &.color-block:hover a {
-        text-decoration: none;
-      }
-
-      &.image-block:hover a {
-        color: blue;
-      }
     }
-  }
 }
