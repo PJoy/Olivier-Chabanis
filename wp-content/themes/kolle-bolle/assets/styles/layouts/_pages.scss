@@ -14,6 +14,44 @@
   .outer-content-block {
     padding: 5px;
     background: white;
+
+    //XL
+    @media (min-width: 1200px) {
+      &.y-1 {
+        height: 290px;
+      }
+      &.y-2 {
+        height: 580px;
+      }
+      &.y-3 {
+        height: 870px;
+      }
+    }
+    //LG
+    @media (max-width: 992px) {
+      &.y-1 {
+        height: 330px;
+      }
+      &.y-2 {
+        height: 660px;
+      }
+      &.y-3 {
+        height: 990px;
+      }
+    }
+    //MD
+    @media (max-width: 768px) {
+      &.y-1 {
+        height: 390px;
+      }
+      &.y-2 {
+        height: 780px;
+      }
+      &.y-3 {
+        height: 1170px;
+      }
+    }
+
     .content-block {
       color: $blue;
 
@@ -33,19 +71,6 @@
       &.font-small-light{
         font-size: 14px;
         font-weight: 300;
-      }
-
-      //XL
-      @media (min-width: 1200px) {
-        height: 290px;
-      }
-      //LG
-      @media (max-width: 992px) {
-        height: 330px;
-      }
-      //MD
-      @media (max-width: 768px) {
-        height: 390px;
       }
 
       &.image-block,

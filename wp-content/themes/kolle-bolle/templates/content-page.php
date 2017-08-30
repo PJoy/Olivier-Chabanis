@@ -6,19 +6,60 @@
 		$link = ($block["lien_interne"] != '')
 			? $block["lien_interne"]
 			: $block["lien_externe"];
-		$class = ($bg != '')
+
+		//CLASSES
+		$mainClass = ($bg != '')
 			? 'image-block'
 			: (($link != '')
 				? 'color-block'
 				: 'simple-block' );
-		$font = ($block["type"] == "Lien")
+		$fontClass = ($block["type"] == "Lien")
             ? 'bigger-lighter'
             : ($block["type"] == "Texte court"
                 ? 'big-regular'
                 : 'small-light' );
-		?>
-		<div class="outer-content-block col-lg-6 col-xl-4">
-			<div class="content-block <?php echo $class.' font-'.$font; ?>" <?php if ($bg != '') echo 'style="background: url('.$bg.')"'?>>
+
+		switch ($block["dimensions"]){
+            case '1x1':
+                $widthClass = 'col-4';
+                $heightClass = "y-1";
+                break;
+            case '1x2':
+                $widthClass = 'col-8';
+                $heightClass = "y-1";
+                break;
+            case '1x3':
+                $widthClass = 'col-12';
+                $heightClass = "y-1";
+                break;
+            case '2x1':
+                $widthClass = 'col-4';
+                $heightClass = "y-2";
+                break;
+            case '2x2':
+                $widthClass = 'col-8';
+                $heightClass = "y-2";
+                break;
+            case '2x3':
+                $widthClass = 'col-12';
+                $heightClass = "y-2";
+                break;
+            case '3x1':
+                $widthClass = 'col-4';
+                $heightClass = "y-3";
+                break;
+            case '3x2':
+                $widthClass = 'col-8';
+                $heightClass = "y-3";
+                break;
+            case '3x3':
+                $widthClass = 'col-12';
+                $heightClass = "y-3";
+                break;
+        } ?>
+
+		<div class="outer-content-block <?php echo $widthClass.' '.$heightClass; ?>">
+			<div class="content-block <?php echo $mainClass.' font-'.$fontClass; ?>" <?php if ($bg != '') echo 'style="background: url('.$bg.')"'?>>
 				<?php if ($link != '') echo '<a href="'.$link.'">'; ?>
 				<?php echo $block["texte"]?>
 				<?php if ($link != '') echo '</a>'; ?>
