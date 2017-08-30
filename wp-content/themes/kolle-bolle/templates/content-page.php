@@ -1,8 +1,10 @@
 <?php $blocks = get_field("blocs"); ?>
 
 <div class="content-blocks-wrapper">
-	<?php foreach ($blocks as $block){
+	<?php foreach ($blocks as $key=>$block){
 		$hasImage = (strcmp($block["type"],"bloc image") == 0);
+		$hasText = (strcmp($block["texte"],'') != 0);
+		$hasLink = (strcmp($block["lien"],'') != 0);
 
 		$classes = '';
 		$classes .= ($hasImage ? 'image-block ' : 'text-block ');
@@ -14,9 +16,12 @@
 		$classes .= 'block-y-1-'.$block["taille_y_1"].' ';
 
 		?>
-		<div class="content-block <?php echo $classes; ?>" <?php if ($hasImage) echo 'style="background: url('.$block["image"].')"'?>>
-
+		<?php if ($hasLink) echo '<a href="">'; ?>
+		<div id="<?php echo 'block-'.$key; ?>" class="content-block <?php echo $classes; ?>"
+			<?php if ($hasImage) echo 'style="background: url('.$block["image"].')"'?>>
+			<p class="content"><?php if ($hasText) echo $block["texte"] ?></p>
 		</div>
+		<?php if ($hasLink) echo '</a>'; ?>
 		<?php
 	} ?>
 </div>
