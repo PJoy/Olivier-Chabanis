@@ -15,17 +15,19 @@
             padding: 0;
         }
     }
+
+    margin-bottom: 20px;
 }
 /* RATIO TEMPLATE = 0.64 */
 .content-blocks-wrapper {
-    width: 960px;
+    width: 930px;
     margin: 0 auto;
     .content-block-outer {
         .content-block {
             font-weight: 200;
 
             float: left;
-            margin: 10px;
+            margin-bottom: 15px;
 
             &.image-block {
                 background-size: cover !important;
@@ -79,16 +81,16 @@
                 height: 300px;
             }
             &.block-x-3-2 {
-                width: 620px;
+                width: 615px;
             }
             &.block-y-3-2 {
-                height: 620px;
+                height: 615px;
             }
             &.block-x-3-3 {
-                width: 940px;
+                width: 930px;
             }
             &.block-y-3-3 {
-                height: 940px;
+                height: 930px;
             }
         }
 

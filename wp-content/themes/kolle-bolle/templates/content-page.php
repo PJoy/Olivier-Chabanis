@@ -28,3 +28,13 @@
 		<?php
 	} ?>
 </div>
+
+<script>
+	jQuery('.grid').masonry({
+		// options
+		itemSelector: '.grid-item',
+		columnWidth: 300,
+		gutter: 15,
+	});
+</script>
+
