@@ -27,8 +27,8 @@
 				<?php if ($hasLink) {
 					echo '<a href="">';
 				} ?>
-				<div id="<?php echo 'block-'.$key; ?>" class="content-block <?php echo $classes; ?>"
-					<?php if ($hasImage) echo 'style="background: url('.$block["image"].')"'?>>
+				<div id="<?php echo 'block-'.$key; ?>" class="content-block <?php echo $classes; ?>">
+					<?php if ($hasImage) echo '<div class="background-image" style="background: url('.$block["image"].')"></div>'?>
 					<?php if ($hasText) echo $block["texte"] ?>
 				</div>
 				<?php if ($hasLink) {
@@ -57,18 +57,16 @@ if (is_front_page()) {
 		var rand = Math.random();
 		var i = 1;
 		var $inverts = jQuery('.invert-'+i);
-		if ( rand > 0.5){
-			while ($inverts.length != 0){
-				i++;
+		//if ( rand > 0.5){
+		while ($inverts.length != 0){
+			i++;
 
-				console.log($inverts);
+			$inverts.first().append($inverts.last().children("div"));
+			$inverts.last().append($inverts.first().children("div").first());
 
-				$inverts.first().append($inverts.last().find("div"));
-				$inverts.last().append($inverts.first().find("div").first());
-
-				$inverts = jQuery('.invert-'+i);
-			}
+			$inverts = jQuery('.invert-'+i);
 		}
+		//}
 	</script>
 	<?php
 }
