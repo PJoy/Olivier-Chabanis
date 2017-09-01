@@ -18,9 +18,19 @@
 
     margin-bottom: 20px;
 }
+
 /* RATIO TEMPLATE = 0.64 */
 .content-blocks-wrapper {
     width: 930px;
+
+    @media (max-width: 991px) {
+        width: 620px;
+    }
+
+    @media (max-width: 650px) {
+        width: 310px;
+    }
+
     margin: 0 auto;
     .content-block-outer {
         .color-hover {

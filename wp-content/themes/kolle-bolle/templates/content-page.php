@@ -17,13 +17,18 @@
 			$classes .= 'block-x-1-'.$block["taille_x_1"].' ';
 			$classes .= 'block-y-1-'.$block["taille_y_1"].' ';
 
+			$data = '';
+			$data .= 'data-pos3 = "'.$block["position_3"].'" ';
+			$data .= 'data-pos2 = "'.$block["position_2"].'" ';
+			$data .= 'data-pos1 = "'.$block["position_1"].'" ';
+
 			$doInvert = $block["inversion"];
 
 			$outerClasses = "grid-item--width".$block["taille_x_3"].' ';
 			if ($doInvert) $outerClasses .= "invert invert-".$block["invert_index"];
 
 			?>
-			<div class="content-block-outer grid-item <?php echo $outerClasses; ?>">
+			<div class="content-block-outer grid-item <?php echo $outerClasses; ?>" <?php echo $data; ?>>
 				<?php if ($hasLink) {
 					echo '<a href="">';
 				} ?>
@@ -41,12 +46,52 @@
 	</div>
 
 	<script>
-		jQuery('.grid').masonry({
-			// options
-			itemSelector: '.grid-item',
-			columnWidth: 300,
-			gutter: 15,
-		});
+		if (window.innerWidth < 650) {
+			jQuery('.grid').isotope(
+				{
+					itemSelector: '.grid-item',
+					masonry: {
+						columnWidth: 300,
+						gutter: 15
+					},
+					getSortData: {
+						order3: '[data-pos3] parseInt',
+						order2: '[data-pos2] parseInt',
+						order1: '[data-pos1] parseInt'
+					},
+					sortBy: 'order1'
+				});
+		} else if (window.innerWidth < 990) {
+			jQuery('.grid').isotope(
+				{
+					itemSelector: '.grid-item',
+					masonry: {
+						columnWidth: 300,
+						gutter: 15
+					},
+					getSortData: {
+						order3: '[data-pos3] parseInt',
+						order2: '[data-pos2] parseInt',
+						order1: '[data-pos1] parseInt'
+					},
+					sortBy: 'order2'
+				});
+		} else {
+			jQuery('.grid').isotope(
+				{
+					itemSelector: '.grid-item',
+					masonry: {
+						columnWidth: 300,
+						gutter: 15
+					},
+					getSortData: {
+						order3: '[data-pos3] parseInt',
+						order2: '[data-pos2] parseInt',
+						order1: '[data-pos1] parseInt'
+					},
+					sortBy: 'order3'
+				});
+		}
 	</script>
 
 <?php
@@ -57,16 +102,16 @@ if (is_front_page()) {
 		var rand = Math.random();
 		var i = 1;
 		var $inverts = jQuery('.invert-'+i);
-		//if ( rand > 0.5){
-		while ($inverts.length != 0){
-			i++;
+		if ( rand > 0.5 ){
+			while ($inverts.length != 0){
+				i++;
 
-			$inverts.first().append($inverts.last().children("div"));
-			$inverts.last().append($inverts.first().children("div").first());
+				$inverts.first().append($inverts.last().children("div"));
+				$inverts.last().append($inverts.first().children("div").first());
 
-			$inverts = jQuery('.invert-'+i);
+				$inverts = jQuery('.invert-'+i);
+			}
 		}
-		//}
 	</script>
 	<?php
 }
