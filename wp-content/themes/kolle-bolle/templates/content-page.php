@@ -8,6 +8,7 @@
 
 		$classes = '';
 		$classes .= ($hasImage ? 'image-block ' : 'text-block ');
+		$classes .= ($hasText ? seoUrl($block["gabarit"]).' ' : '');
 
 		$classes .= 'block-x-3-'.$block["taille_x_3"].' ';
 		$classes .= 'block-y-3-'.$block["taille_y_3"].' ';

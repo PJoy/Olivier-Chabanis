@@ -23,12 +23,6 @@
     .content-block-outer {
         .content-block {
             font-weight: 200;
-            strong {
-                font-weight: 500;
-                strong {
-                    font-weight: 700;
-                }
-            }
 
             float: left;
             margin: 10px;
@@ -51,6 +45,31 @@
             &.text-block {
                 color: $blue;
                 text-align: center;
+
+                &.texte-gras {
+                    font-weight: normal;
+                    strong {
+                        font-weight: 600;
+                    }
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                }
+
+                &.texte-medium {
+                    font-weight: 200;
+                    strong {
+                        font-weight: normal;
+                    }
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                }
+
+                &.texte-light {
+                    font-weight: 200;
+                    strong {
+                        font-weight: normal;
+                    }
+                }
             }
 
             &.block-x-3-1 {
