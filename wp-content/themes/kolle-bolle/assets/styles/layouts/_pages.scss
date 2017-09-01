@@ -23,6 +23,19 @@
     width: 930px;
     margin: 0 auto;
     .content-block-outer {
+        .color-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 15px;
+
+            &:hover {
+                background: $blue;
+                opacity: 0.3;
+            }
+        }
+
         .content-block {
             font-weight: 200;
 
