@@ -26,13 +26,15 @@
 			<div class="content-block-outer grid-item <?php echo $outerClasses; ?>">
 				<?php if ($hasLink) {
 					echo '<a href="">';
-					echo '<div class="color-hover"></div>';
 				} ?>
 				<div id="<?php echo 'block-'.$key; ?>" class="content-block <?php echo $classes; ?>"
 					<?php if ($hasImage) echo 'style="background: url('.$block["image"].')"'?>>
 					<?php if ($hasText) echo $block["texte"] ?>
 				</div>
-				<?php if ($hasLink) echo '</a>'; ?>
+				<?php if ($hasLink) {
+					echo '<div class="color-hover"></div>';
+					echo '</a>';
+				} ?>
 			</div>
 			<?php
 		} ?>
