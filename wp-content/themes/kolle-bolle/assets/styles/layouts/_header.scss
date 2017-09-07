@@ -1,11 +1,22 @@
 header {
 
+    @media (max-width: 990px) {
+        margin-bottom: 36px;
+        .container.desktop {
+            nav.nav-primary {
+                left: 0;
+                bottom: -26px!important;
+            }
+        }
+    }
+
     .container.desktop {
         position: relative;
         width: 1100px;
         height: 120px;
         margin: 15px auto;
         padding: 0 15px;
+        max-width: 100%!important;
 
         .logo {
             background-position: left !important;
