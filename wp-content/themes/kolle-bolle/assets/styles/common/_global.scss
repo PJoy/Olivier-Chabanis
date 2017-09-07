@@ -46,4 +46,8 @@ h1 {
 
 .wrap.container {
     max-width: none!important;
+
+    @media (max-width: 767px) {
+        float: left;
+    }
 }
