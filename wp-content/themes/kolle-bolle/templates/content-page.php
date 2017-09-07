@@ -94,24 +94,6 @@
 		}
 	</script>
 
-<?php
-//TODO passer en template
-if (is_front_page()) {
-	?>
-	<script>
-		var rand = Math.random();
-		var i = 1;
-		var $inverts = jQuery('.invert-'+i);
-		if ( rand > 0.5 ){
-			while ($inverts.length != 0){
-				i++;
-
-				$inverts.first().append($inverts.last().children("div"));
-				$inverts.last().append($inverts.first().children("div").first());
-
-				$inverts = jQuery('.invert-'+i);
-			}
-		}
-	</script>
-	<?php
+<?php if (is_front_page()) {
+	include("pages/home.php");
 }
