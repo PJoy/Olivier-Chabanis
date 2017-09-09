@@ -1,3 +1,4 @@
+<?php $post_title = get_the_title(); ?>
 <header class="banner">
 	<div class="container desktop">
 		<a href="/">
@@ -9,7 +10,11 @@
 			<?php
 			$menu_elems = wp_get_nav_menu_items('Main');
 			foreach ($menu_elems as $menu_elem) {
-				echo '<a class="menu-elem" href="'.$menu_elem->url.'"><span>'.$menu_elem->title.'</span></a>';
+				if ($post_title == $menu_elem->title) {
+					echo '<a class="menu-elem active" href="' . $menu_elem->url . '"><span>' . $menu_elem->title . '</span></a>';
+				} else {
+					echo '<a class="menu-elem" href="' . $menu_elem->url . '"><span>' . $menu_elem->title . '</span></a>';
+				}
 			}
 			?>
 		</nav>
@@ -31,7 +36,11 @@
 			<?php
 			$menu_elems = wp_get_nav_menu_items('Main');
 			foreach ($menu_elems as $menu_elem) {
-				echo '<a class="menu-elem" href="'.$menu_elem->url.'"><span>'.$menu_elem->title.'</span></a>';
+				if ($post_title == $menu_elem->title) {
+					echo '<a class="menu-elem active" href="' . $menu_elem->url . '"><span>' . $menu_elem->title . '</span></a>';
+				} else {
+					echo '<a class="menu-elem" href="' . $menu_elem->url . '"><span>' . $menu_elem->title . '</span></a>';
+				}
 			}
 			?>
 		</nav>

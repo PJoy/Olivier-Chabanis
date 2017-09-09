@@ -30,7 +30,8 @@ header {
                 font-weight: 200;
                 margin-left: 15px;
 
-                &:hover {
+                &:hover,
+                &.active {
                     font-weight: normal;
                     text-decoration: none;
                     color: $blue;
@@ -89,7 +90,8 @@ header {
                 font-weight: 200;
                 margin-left: 15px;
 
-                &:hover {
+                &:hover,
+                &.active {
                     font-weight: normal;
                     text-decoration: none;
                     color: $blue;
