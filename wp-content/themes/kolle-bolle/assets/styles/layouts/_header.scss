@@ -78,10 +78,26 @@ header {
             text-align: center;
             float: left;
             display: none;
+            color: $blue;
+            text-transform: uppercase;
+
+
 
             a {
                 display: block;
+                font-size: 13px;
+                font-weight: 200;
+                margin-left: 15px;
+
+                &:hover {
+                    font-weight: normal;
+                    text-decoration: none;
+                    color: $blue;
+                    border-top: 1px solid $blue;
+                    border-bottom: 1px solid $blue;
+                }
             }
         }
+
     }
 }
