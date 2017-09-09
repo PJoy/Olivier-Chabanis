@@ -1,14 +1,5 @@
 header {
-
-    @media (max-width: 990px) {
-        margin-bottom: 36px;
-        .container.desktop {
-            nav.nav-primary {
-                left: 0;
-                bottom: -26px!important;
-            }
-        }
-    }
+    overflow: hidden;
 
     .container.desktop {
         position: relative;
@@ -48,13 +39,13 @@ header {
                 }
             }
         }
-        @media (max-width: 767px) {
+        @media (max-width: 1200px) {
             display: none;
         }
     }
 
     .container.mobile {
-        @media (min-width: 767px) {
+        @media (min-width: 1200px) {
             display: none;
         }
 
@@ -67,11 +58,19 @@ header {
         }
 
         .menu-btn {
-            background-position: bottom!important;
-            background-size: contain !important;
-            width: 30px;
+            background-size: 30px !important;
+            width: 30%;
             height: 120px;
             float: right;
+            background-position: bottom 35px right !important;
+
+
+            @media (min-width: 767px) {
+                background-position: bottom 8px right!important;
+            }
+            @media (min-width: 500px) {
+                background-position: bottom 13px right!important;
+            }
         }
 
         nav.nav-primary {
