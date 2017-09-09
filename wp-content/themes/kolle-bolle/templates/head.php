@@ -4,5 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
 
-	<script src="<?php echo get_template_directory_uri()."/bower_components/isotope/dist/isotope.pkgd.js" ?>"
+	<script src="<?php echo get_template_directory_uri()."/bower_components/isotope/dist/isotope.pkgd.js" ?>"></script>
+	<script src="<?php echo get_template_directory_uri()."/bower_components/slick/slick/slick.min.js" ?>"></script>
 </head>

@@ -3,7 +3,6 @@
 		<a href="/">
 			<div class="logo" style="background:
 				url('<?php echo get_template_directory_uri()."/assets/images/header-logo.png"; ?>') no-repeat">
-
 			</div>
 		</a>
 		<nav class="nav-primary">
