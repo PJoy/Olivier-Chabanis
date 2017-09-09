@@ -3,9 +3,9 @@
 		<hr id="hr1">
 		<div class="contact-info">
 			<p>
-				<b>—IF—</b><br>
+				<h1><b>—IF—</b><br></h1>
 				31 bis, quai Fulchiron - 69005 LYON<br>
-				T.0478065058 — F.0478065231<br>
+				T. 04 78 06 50 58 — F. 04 78 06 52 31<br>
 				contact@ifcontemporain.com<br>
 				Laurence / 06 15 05 33 22 — Catherine / 06 07 67 06 59<br>
 			</p>
