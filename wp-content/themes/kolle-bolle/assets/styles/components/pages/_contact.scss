@@ -1,9 +1,13 @@
 .contact-page {
     background: $blueBg;
 
+
     .contact-page-inner {
-        width: 900px;
+        @media (min-width: 767px) {
+            width: 900px;
+        }
         margin: 0 auto;
+        padding: 0 15px;
         padding-top: 50px;
         padding-bottom: 100px;
 
@@ -16,7 +20,9 @@
 
         hr, .contact-info {
             margin: 0 auto;
-            width: 500px;
+            @media (min-width: 767px) {
+                width: 500px;
+            }
         }
 
         .contact-info {
@@ -42,7 +48,10 @@
         }
 
         textarea {
-            height: 200px;
+            @media (min-width: 767px) {
+
+                height: 200px;
+            }
         }
 
         button {
@@ -62,6 +71,7 @@
             }
         }
     }
+
 
     h1 {
         font-size: 25px;
