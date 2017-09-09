@@ -46,3 +46,10 @@
 		</nav>
 	</div>
 </header>
+
+<script>
+	jQuery('.menu-elem').click(function () {
+		jQuery('.menu-elem').removeClass('active');
+		jQuery(this).addClass('active');
+	})
+</script>
