@@ -51,13 +51,13 @@
             padding: 0;
 
             text-decoration: underline;
-            color: blue;
+            color: $blue;
             border: none;
 
             &:hover {
                 background: $blueBg;
                 text-decoration: underline;
-                color: blue;
+                color: $blue;
                 cursor: pointer;
             }
         }
@@ -74,5 +74,15 @@
     button {
         font-size: 16px;
         font-weight: 200;
+    }
+
+    .map-container {
+        background: $blue;
+
+        #map {
+            height: 400px;
+            width: 100%;
+            opacity: 0.5;
+        }
     }
 }

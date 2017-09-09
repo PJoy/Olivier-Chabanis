@@ -3,11 +3,11 @@
 		<hr id="hr1">
 		<div class="contact-info">
 			<p>
-				<h1><b>—IF—</b><br></h1>
-				31 bis, quai Fulchiron - 69005 LYON<br>
-				T. 04 78 06 50 58 — F. 04 78 06 52 31<br>
-				contact@ifcontemporain.com<br>
-				Laurence / 06 15 05 33 22 — Catherine / 06 07 67 06 59<br>
+			<h1><b>—IF—</b><br></h1>
+			31 bis, quai Fulchiron - 69005 LYON<br>
+			T. 04 78 06 50 58 — F. 04 78 06 52 31<br>
+			contact@ifcontemporain.com<br>
+			Laurence / 06 15 05 33 22 — Catherine / 06 07 67 06 59<br>
 			</p>
 		</div>
 		<hr id="hr2">
@@ -32,6 +32,31 @@
 		<hr id="hr3">
 
 		<p><b>-</b> Plan d'accès <b>-</b></p>
-		<div style="background: url('<?php echo get_template_directory_uri()."/assets/images/plan.png"?>')"
+
+		<div class="map-container">
+			<div id="map">
+			</div>
+		</div>
+
+		<script>
+			function initMap() {
+				var uluru = {lat: 45.7534825, lng: 4.8232096};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 15,
+					center: uluru,
+					disableDefaultUI: true,
+					mapTypeId: 'satellite'
+				});
+				var marker = new google.maps.Marker({
+					position: uluru,
+					map: map
+				});
+			}
+		</script>
+		<script async defer
+		        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP-HupX3XPVePh0RysJBaclI4CLBMLOxI&callback=initMap">
+		</script>
+
+
 	</div>
 </div>
