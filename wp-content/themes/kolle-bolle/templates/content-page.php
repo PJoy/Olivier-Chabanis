@@ -114,4 +114,6 @@
 	include ("pages/contact.php");
 } elseif ($post->post_name == "presse") {
 	include ("pages/presse.php");
+} elseif ($post->post_name == "notre-catalogue") {
+	include ("pages/catalogue.php");
 }
