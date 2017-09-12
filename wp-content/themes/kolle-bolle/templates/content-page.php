@@ -39,7 +39,7 @@
 						} ?>
 						<div id="<?php echo 'block-' . $key; ?>" class="content-block <?php echo $classes; ?>">
 							<?php if ( $hasImage )
-								echo '<div class="background-image" style="background: url(' . $block["image"] . ')"></div>' ?>
+								echo '<div class="background-image" style="background: url(' . $block["image"] . ') no-repeat"></div>' ?>
 							<?php if ( $hasText )
 								echo $block["texte"] ?>
 						</div>
