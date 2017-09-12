@@ -1,3 +1,18 @@
+<?php
+$dbUrls = array(
+	"canapes" => "https://www.wm4pr.com/fr/ResultAmbient/Shop_200122_Ambient_6/Page_1",
+	"chambre" => "https://www.wm4pr.com/fr/ResultAmbient/Shop_200122_Ambient_2/Page_1",
+	"acessoires" => "https://www.wm4pr.com/fr/ResultAmbient/Shop_200122_Ambient_3/Page_1",
+	"sejour" => "https://www.wm4pr.com/fr/ResultAmbient/Shop_200122_Ambient_15/Page_1",
+	"luminaires" => "https://www.wm4pr.com/fr/ResultAmbient/Shop_200122_Ambient_9/Page_1",
+	"tables-chaises" => "https://www.wm4pr.com/fr/ResultAmbient/Shop_200122_Ambient_17/Page_1",
+	"bureau" => "https://www.wm4pr.com/fr/ResultAmbient/Shop_200122_Ambient_16/Page_1",
+	"terrasse" => "https://www.wm4pr.com/fr/ResultAmbient/Shop_200122_Ambient_8/Page_1",
+);
+
+$searchUrl = "https://www.wm4pr.com/fr/ResultSearch/Shop_200122?fullTextSearch=";
+?>
+
 <!--  SERVICE BESTFINDER by DESIGNBEST  -->
 
 
@@ -5,7 +20,9 @@
 <!--  Si une version précédente du Bestfinder est présente, effacer complètement le vieux code.  -->
 <!--  Il est important de ne pas modifier le code suivant.  -->
 
-<iframe id="tppIframe" style="background-color:transparent; width:100%; height:600px; border:none; margin:0px 0px 0px 0px; max-width:none;" src="https://www.wm4pr.com/fr/Home/Index/200122" allowtransparency="true" frameborder="0"></iframe>
+<iframe id="tppIframe" style="background-color:transparent; width:100%; height:600px; border:none; margin:0px 0px 0px 0px; max-width:none;"
+        src="https://www.wm4pr.com/fr/Home/Index/200122"
+        allowtransparency="true" frameborder="0"></iframe>
 
 
 

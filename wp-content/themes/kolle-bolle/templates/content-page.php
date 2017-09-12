@@ -115,5 +115,9 @@
 } elseif ($post->post_name == "presse") {
 	include ("pages/presse.php");
 } elseif ($post->post_name == "notre-catalogue") {
+
+} elseif ($post->post_name == "catalogue") {
 	include ("pages/catalogue.php");
 }
+
+
