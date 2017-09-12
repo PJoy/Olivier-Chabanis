@@ -38,15 +38,16 @@
 							echo '<a href="">';
 						} ?>
 						<?php if ($post->post_name == "presse") { echo '<a href="'.$block["image"].'" data-toggle="lightbox" data-gallery="presse">'; } ?>
-						 <div id="<?php echo 'block-' . $key; ?>" class="content-block <?php echo $classes; ?>">
-							<?php if ( $hasImage )
-								echo '<div class="background-image" style="background: url(' . $block["image"] . ') no-repeat"></div>' ?>
-							<?php if ( $hasText )
-								echo $block["texte"] ?>
-						</div>
-						<?php if ($post->post_name == "presse") { echo '</a>'; } ?>
+							<div id="<?php echo 'block-' . $key; ?>" class="content-block <?php echo $classes; ?>">
+								<?php if ( $hasImage )
+									echo '<div class="background-image" style="background: url(' . $block["image"] . ') no-repeat"></div>' ?>
+								<?php if ( $hasText )
+									echo $block["texte"] ?>
+							</div>
 						<?php if ( $hasLink ) {
 							echo '<div class="color-hover"></div>';
+						} ?>
+						<?php if ( $hasLink || $post->post_name == "presse") {
 							echo '</a>';
 						} ?>
 					</div>
