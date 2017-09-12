@@ -10,6 +10,7 @@
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta",
     "popper.js": "^1.12.3",
     "isotope": "^3.0",
-    "slick": "git://github.com/kenwheeler/slick"
+    "slick": "git://github.com/kenwheeler/slick",
+    "ekko-lightbox": "^5.2.0"
   }
 }
