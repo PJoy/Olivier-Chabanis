@@ -1,7 +1,7 @@
 <?php $post_title = get_the_title(); ?>
 <header class="banner">
 	<div class="container desktop">
-		<a href="/">
+		<a href="<?php echo get_home_url() ?>">
 			<div class="logo" style="background:
 				url('<?php echo get_template_directory_uri()."/assets/images/header-logo.png"; ?>') no-repeat">
 			</div>
@@ -21,7 +21,7 @@
 	</div>
 
 	<div class="container mobile">
-		<a href="<?php get_home_url(); ?>">
+		<a href="<?php echo get_home_url(); ?>">
 			<div class="logo" style="background:
 				url('<?php echo get_template_directory_uri()."/assets/images/header-logo.png"; ?>') no-repeat">
 			</div>
