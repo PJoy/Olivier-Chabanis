@@ -35,7 +35,7 @@
 					?>
 					<div class="content-block-outer grid-item <?php echo $outerClasses; ?>" <?php echo $data; ?>>
 						<?php if ( $hasLink ) {
-							echo '<a href="">';
+							echo '<a href="'.$block['lien'].'">';
 						} ?>
 						<?php if ($post->post_name == "presse") { echo '<a href="'.$block["image"].'" data-toggle="lightbox" data-gallery="presse">'; } ?>
 							<div id="<?php echo 'block-' . $key; ?>" class="content-block <?php echo $classes; ?>">
@@ -118,6 +118,20 @@
 
 } elseif ($post->post_name == "catalogue") {
 	include ("pages/catalogue.php");
+}elseif ($post->post_name == "accessoires") {
+	include ("pages/catalogue.php");
+}elseif ($post->post_name == "bureau") {
+	include ("pages/catalogue.php");
+}elseif ($post->post_name == "canapes") {
+	include ("pages/catalogue.php");
+}elseif ($post->post_name == "chambre") {
+	include ("pages/catalogue.php");
+}elseif ($post->post_name == "luminaires") {
+	include ("pages/catalogue.php");
+}elseif ($post->post_name == "sejour") {
+	include ("pages/catalogue.php");
+}elseif ($post->post_name == "tables-chaises") {
+	include ("pages/catalogue.php");
+}elseif ($post->post_name == "terrasse") {
+	include ("pages/catalogue.php");
 }
-
-
