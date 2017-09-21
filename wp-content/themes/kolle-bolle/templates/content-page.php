@@ -38,12 +38,12 @@
 							echo '<a href="'.$block['lien'].'">';
 						} ?>
 						<?php if ($post->post_name == "presse") { echo '<a href="'.$block["image"].'" data-toggle="lightbox" data-gallery="presse">'; } ?>
-							<div id="<?php echo 'block-' . $key; ?>" class="content-block <?php echo $classes; ?>">
-								<?php if ( $hasImage )
-									echo '<div class="background-image" style="background: url(' . $block["image"] . ') no-repeat"></div>' ?>
-								<?php if ( $hasText )
-									echo $block["texte"] ?>
-							</div>
+						<div id="<?php echo 'block-' . $key; ?>" class="content-block <?php echo $classes; ?>">
+							<?php if ( $hasImage )
+								echo '<div class="background-image" style="background: url(' . $block["image"] . ') no-repeat"></div>' ?>
+							<?php if ( $hasText )
+								echo $block["texte"] ?>
+						</div>
 						<?php if ( $hasLink ) {
 							echo '<div class="color-hover"></div>';
 						} ?>
@@ -116,6 +116,8 @@
 	include ("pages/presse.php");
 } elseif ($post->post_name == "notre-catalogue") {
 
+} elseif ($post->post_name == "newsletter") {
+	include ("pages/newsletter.php");
 } elseif ($post->post_name == "catalogue") {
 	include ("pages/catalogue.php");
 }elseif ($post->post_name == "accessoires") {
