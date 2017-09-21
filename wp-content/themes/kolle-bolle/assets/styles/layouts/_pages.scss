@@ -218,4 +218,23 @@
             }
         }
     }
+
 }
+
+/* lightbox */
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 25% auto 0 !important;
+    }
+}
+
+.modal-body {
+    padding-bottom: 32px;
+    .ekko-lightbox-nav-overlay{
+        a {
+            margin-right: 10px;
+        }
+    }
+}
+
