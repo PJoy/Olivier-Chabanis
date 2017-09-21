@@ -34,29 +34,10 @@
 		<p><b>-</b> Plan d'accès <b>-</b></p>
 
 		<div class="map-container">
-			<div id="map">
+			<div id="map" style="background:
+				url('<?php echo get_template_directory_uri()."/assets/images/plan.png"; ?>') no-repeat">
 			</div>
 		</div>
-
-		<script>
-			function initMap() {
-				var uluru = {lat: 45.7534825, lng: 4.8232096};
-				var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 15,
-					center: uluru,
-					disableDefaultUI: true,
-					mapTypeId: 'satellite'
-				});
-				var marker = new google.maps.Marker({
-					position: uluru,
-					map: map
-				});
-			}
-		</script>
-		<script async defer
-		        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP-HupX3XPVePh0RysJBaclI4CLBMLOxI&callback=initMap">
-		</script>
-
 
 	</div>
 </div>

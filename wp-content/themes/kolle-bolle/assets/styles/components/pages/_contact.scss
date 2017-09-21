@@ -90,9 +90,14 @@
         background: $blue;
 
         #map {
+            background-size: 150%!important;
+            background-position: 50% 75%!important;
+            @media (max-width: 600px) {
+                background-size: 225%!important;
+                background-position: 20% 100%!important;
+            }
             height: 400px;
             width: 100%;
-            opacity: 0.5;
         }
     }
 }
