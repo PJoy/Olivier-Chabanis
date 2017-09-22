@@ -145,4 +145,7 @@
 	include ("pages/catalogue.php");
 }elseif ($post->post_name == "terrasse") {
 	include ("pages/catalogue.php");
+}elseif ($post->post_name == "recherche") {
+	$search = str_replace(' ', '+', $_GET["term"]);
+	include( "pages/catalogue.php" );
 }

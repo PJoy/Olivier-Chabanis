@@ -36,10 +36,21 @@ function replaceMenu(){
 		<div class="input-group">
 			<input type="text" class="form-control" placeholder="">
 			<span class="input-group-btn">
-        <button class="btn btn-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <button class="btn btn-secondary" type="button"
+                onclick="doSearch()"><i class="fa fa-search" aria-hidden="true"></i></button>
       </span>
 		</div>
 	</div>
+
+	<script>
+		function doSearch(){
+			var term = jQuery('#block-0 > div > div.input-group > input').val();
+
+			if (term != ''){
+				location.href = "<?php echo get_page_by_path("notre-catalogue/recherche")->guid?>&term="+term;
+			}
+		}
+	</script>
 
 	<?php
 }
