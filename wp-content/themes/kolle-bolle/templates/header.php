@@ -48,7 +48,7 @@
 </header>
 
 <script>
-	jQuery('.menu-elem').click(function () {
+	jQuery('.menu-elem').on('touchstart click', function () {
 		jQuery('.menu-elem').removeClass('active');
 		jQuery(this).addClass('active');
 	})
