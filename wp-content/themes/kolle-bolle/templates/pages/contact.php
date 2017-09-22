@@ -15,7 +15,7 @@
 		<?php
 		the_content();
 		?>
-
+		<!--
 		<div class="contact-form">
 			<form>
 				<div class="form-group">
@@ -33,6 +33,7 @@
 
 			</form>
 		</div>
+		-->
 		<hr id="hr3">
 
 		<p><b>-</b> Plan d'accès <b>-</b></p>

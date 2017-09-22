@@ -3,6 +3,10 @@
 
 
     .contact-page-inner {
+        label {
+            display: block;
+        }
+
         @media (min-width: 767px) {
             width: 900px;
         }
@@ -39,7 +43,8 @@
         }
 
         input, textarea {
-            border-color: $blue;
+            border: 1px solid $blue;
+            border-radius: 5px;
         }
 
         input {
@@ -48,13 +53,21 @@
         }
 
         textarea {
+            width: 100%;
             @media (min-width: 767px) {
-
                 height: 200px;
             }
         }
 
-        button {
+        button,
+        input[type=submit] {
+            float: left;
+            font-size: 16px;
+            font-weight: 200;
+
+            /*/!\*/
+            width: 55px;
+
             background: $blueBg;
             display: block;
             padding: 0;
@@ -103,7 +116,8 @@
 }
 
 .newsletter {
-    .contact-form {
+    .contact-form,
+    .wpcf7 {
         width: 300px;
         margin: auto;
     }
