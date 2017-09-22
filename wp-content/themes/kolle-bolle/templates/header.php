@@ -27,10 +27,15 @@
 			</div>
 		</a>
 
-		<div class="menu-btn" style="background:
-			url('<?php echo get_template_directory_uri()."/assets/images/ham-menu.png"; ?>') no-repeat"
-		     onclick="jQuery('.container.mobile .nav-primary').slideToggle()">
-		</div>
+		<?php if (isset(get_post_ancestors($post)[0]) && get_post_ancestors($post)[0]==59) { ?>
+			<div class="menu-btn" style="background:url('<?php echo get_template_directory_uri() . "/assets/images/back-arrow.png"; ?>') no-repeat"
+			     onclick="location.href='<?php echo get_page_by_path("notre-catalogue")->guid?>'">
+			</div>
+		<?php } else { ?>
+			<div class="menu-btn" style="background:url('<?php echo get_template_directory_uri() . "/assets/images/ham-menu.png"; ?>') no-repeat"
+			     onclick="jQuery('.container.mobile .nav-primary').slideToggle()">
+			</div>
+		<?php } ?>
 
 		<nav class="nav-primary">
 			<?php
