@@ -12,6 +12,10 @@
 		</div>
 		<hr id="hr2">
 
+		<?php
+		the_content();
+		?>
+
 		<div class="contact-form">
 			<form>
 				<div class="form-group">
