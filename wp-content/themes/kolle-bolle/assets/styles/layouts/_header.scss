@@ -56,6 +56,14 @@ header {
             width: 70%;
             height: 120px;
             float: left;
+            
+            @media (max-width: 1200px) {
+                width: 40%;
+            }
+
+            @media (max-width: 990px) {
+                width: 60%;
+            }
         }
 
         .menu-btn {
