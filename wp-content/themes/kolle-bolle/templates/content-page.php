@@ -41,8 +41,17 @@
 						<div id="<?php echo 'block-' . $key; ?>" class="content-block <?php echo $classes; ?>">
 							<?php if ( $hasImage )
 								echo '<div class="background-image" style="background: url(' . $block["image"] . ') no-repeat"></div>' ?>
-							<?php if ( $hasText )
-								echo $block["texte"] ?>
+							<?php if ( $hasText ){
+								$clear = trim(preg_replace('/ +/', ' ', preg_replace('/[^A-Za-z0-9 ]/', ' ', urldecode(html_entity_decode(strip_tags(
+									$block["texte"]
+								))))));
+
+								if (strcmp($clear, "Menu") == 0){
+									replaceMenu();
+								} else {
+									echo $block["texte"];
+								}
+							} ?>
 						</div>
 						<?php if ( $hasLink ) {
 							echo '<div class="color-hover"></div>';

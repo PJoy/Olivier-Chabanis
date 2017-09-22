@@ -10,22 +10,41 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 $sage_includes = [
-  'lib/assets.php',    // Scripts and stylesheets
-  'lib/extras.php',    // Custom functions
-  'lib/setup.php',     // Theme setup
-  'lib/titles.php',    // Page titles
-  'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php' // Theme customizer
+	'lib/assets.php',    // Scripts and stylesheets
+	'lib/extras.php',    // Custom functions
+	'lib/setup.php',     // Theme setup
+	'lib/titles.php',    // Page titles
+	'lib/wrapper.php',   // Theme wrapper class
+	'lib/customizer.php' // Theme customizer
 ];
 
 foreach ($sage_includes as $file) {
-  if (!$filepath = locate_template($file)) {
-    trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
-  }
+	if (!$filepath = locate_template($file)) {
+		trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
+	}
 
-  require_once $filepath;
+	require_once $filepath;
 }
 unset($file, $filepath);
+
+function replaceMenu(){
+	?>
+	<div class="search-form">
+		<div class="search-text">
+			<p>- Recherche -</p>
+		</div>
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="">
+			<span class="input-group-btn">
+        <button class="btn btn-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </span>
+		</div>
+	</div>
+
+	<?php
+}
+
+
 
 function outpre($var) {
 	echo'<pre>';

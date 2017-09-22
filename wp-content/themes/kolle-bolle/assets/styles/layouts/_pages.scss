@@ -238,3 +238,25 @@
     }
 }
 
+.search-form {
+    .search-text{
+        width: 100%;
+    }
+    .input-group {
+        width: 100%;
+        input {
+            border-color: $blue !important;
+        }
+        .btn-secondary {
+            background-color: $blue;
+            border-color: $blue;
+        }
+    }
+}
+.btn.active.focus, .btn.active:focus,
+.btn.focus, .btn:active.focus,
+.btn:active:focus, .btn:focus{
+    outline: none!important;
+    box-shadow: 0 0 0 3px rgba(0,0,255,.25)
+}
+
