@@ -80,6 +80,12 @@
 
             margin-bottom: 15px;
 
+            &.title-1-1 {
+                p {
+                    margin-bottom: 100%;
+                }
+            }
+
             &.image-block {
                 .background-image {
                     z-index: 1;

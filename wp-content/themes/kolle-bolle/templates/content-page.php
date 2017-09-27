@@ -13,6 +13,8 @@
 					$classes .= ( $hasImage ? 'image-block ' : 'text-block ' );
 					$classes .= ( $hasText ? seoUrl( $block["gabarit"] ) . ' ' : '' );
 
+					$classes .= ( $block["titre_centre"] == "oui") ? '' : "title-".$block["sous-bloc_titre"]." ";
+
 					$classes .= 'block-x-3-' . $block["taille_x_3"] . ' ';
 					$classes .= 'block-y-3-' . $block["taille_y_3"] . ' ';
 					$classes .= 'block-x-2-' . $block["taille_x_2"] . ' ';
