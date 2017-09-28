@@ -81,8 +81,10 @@
             margin-bottom: 15px;
 
             &.title-1-1 {
-                p {
-                    margin-bottom: 100%;
+                @media (min-width: 650px) {
+                    p {
+                        margin-bottom: 100%;
+                    }
                 }
             }
 
