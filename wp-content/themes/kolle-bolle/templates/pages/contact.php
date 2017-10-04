@@ -39,9 +39,11 @@
 		<p><b>-</b> Plan d'accès <b>-</b></p>
 
 		<div class="map-container">
-			<div id="map" style="background:
-				url('<?php echo get_template_directory_uri()."/assets/images/plan.png"; ?>') no-repeat">
-			</div>
+			<a href="https://www.google.fr/maps/place/31B+Quai+Fulchiron,+69005+Lyon/@45.7538438,4.8247249,16.13z/data=!4m8!1m2!2m1!1s31bis+Quai+Fulchiron,+69005+Lyon!3m4!1s0x47f4ebb23d25b15d:0x9d0d47f73970490d!8m2!3d45.7535647!4d4.8231288">
+				<div id="map" style="background:
+					url('<?php echo get_template_directory_uri()."/assets/images/plan.png"; ?>') no-repeat">
+				</div>
+			</a>
 		</div>
 
 	</div>
