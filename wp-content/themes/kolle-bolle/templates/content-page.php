@@ -134,7 +134,7 @@
 }elseif ($post->post_name == "accessoires") {
 	include ("pages/catalogue.php");
 }elseif ($post->post_name == "bureau") {
-	include ("pages/catalogue.php");
+
 }elseif ($post->post_name == "canapes") {
 	include ("pages/catalogue.php");
 }elseif ($post->post_name == "chambre") {
