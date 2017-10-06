@@ -1,17 +1,17 @@
-dist
-bower_components
-node_modules
+#dist
+#bower_components
+#node_modules
 npm-debug.log
-vendor
+#vendor
 package-lock.json
 
 .htaccess
 .idea/
-wp-includes/
+#wp-includes/
 .editorconfig
 lang/
 
 .DS_Store
 wp-content/.DS_Store
-wp-content/upgrade/
-wp-content/uploads/
+#wp-content/upgrade/
+#wp-content/uploads/
