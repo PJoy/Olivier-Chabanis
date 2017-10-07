@@ -14,8 +14,12 @@ $dbUrls = array(
 $searchUrl = "https://www.wm4pr.com/fr/ResultSearch/Shop_200122?fullTextSearch=";
 
 
-$url = isset($search) ? $searchUrl.$search : $defaultUrl;
-$url = isset($dbUrls[$post->post_name]) ? $dbUrls[$post->post_name] : $defaultUrl;
+$url = $defaultUrl;
+	if (isset($search)){
+		$url = $searchUrl.$search;
+	} else if (isset($dbUrls[$post->post_name])) {
+		$url = $dbUrls[$post->post_name];
+	}
 ?>
 
 <!--  SERVICE BESTFINDER by DESIGNBEST  -->
