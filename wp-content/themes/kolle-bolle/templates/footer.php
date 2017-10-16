@@ -6,6 +6,6 @@
 
 		<br>
 
-		© <a href="/">IF Contemporain</a>  - Conception graphique <a href="kollebolle.com">Kolle Bolle</a> - <a href="portejoie.fr">Développeur Web</a>
+		© <a href="/">IF Contemporain</a>  - Conception graphique <a href="http://kollebolle.com">Kolle Bolle</a> - <a href="http://portejoie.fr">Développeur Web</a>
 	</div>
 </footer>
