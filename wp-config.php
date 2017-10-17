@@ -26,7 +26,7 @@ define('DB_NAME', 'ifcontemporain');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Cateloestneeen2004$');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

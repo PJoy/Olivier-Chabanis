@@ -11,6 +11,7 @@
     "popper.js": "^1.12.3",
     "isotope": "^3.0",
     "slick": "git://github.com/kenwheeler/slick",
-    "ekko-lightbox": "^5.2.0"
+    "ekko-lightbox": "^5.2.0",
+    "vanilla-lazyload": "^10"
   }
 }
