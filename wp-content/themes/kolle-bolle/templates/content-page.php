@@ -65,6 +65,7 @@
 					<?php
 				} ?>
 			</div>
+			<script src="<?php echo get_template_directory_uri()."/bower_components/vanilla-lazyload/dist/lazyload.js" ?>"></script>
 
 			<script>
 				if (window.innerWidth < 650) {
@@ -113,6 +114,10 @@
 							sortBy: 'order3'
 						});
 				}
+
+				var myLazyLoad = new LazyLoad({
+					elements_selector: ".lazy"
+				});
 
 			</script>
 

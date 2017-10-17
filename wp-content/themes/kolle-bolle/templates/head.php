@@ -10,7 +10,6 @@
 	<script src="<?php echo get_template_directory_uri()."/bower_components/isotope/dist/isotope.pkgd.js" ?>"></script>
 	<script src="<?php echo get_template_directory_uri()."/bower_components/slick/slick/slick.min.js" ?>"></script>
 	<script src="<?php echo get_template_directory_uri()."/bower_components/ekko-lightbox/dist/ekko-lightbox.min.js" ?>"></script>
-	<script src="<?php echo get_template_directory_uri()."/bower_components/vanilla-lazyload/dist/lazyload.js" ?>"></script>
 
 	<script src="https://use.fontawesome.com/1f0ceada91.js"></script>
 </head>
