@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Email Subscribers & Newsletters 3.3.4\n"
+"Project-Id-Version: Email Subscribers & Newsletters 3.4.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-26 12:00:36+00:00\n"
-"PO-Revision-Date: Thu Sep 07 2017 13:21:16 GMT+0530 (IST)\n"
-"Last-Translator: Mansi <mansi.shah@appsmagnet.com>\n"
+"PO-Revision-Date: Fri Dec 15 2017 12:23:33 GMT+0530 (IST)\n"
+"Last-Translator: admin <mansi.shah@appsmagnet.com>\n"
 "Language-Team: StoreApps <support@storeapps.org>, Icegram <hello@icegram."
 "com>\n"
 "Language: Lithuanian\n"
@@ -26,11 +26,20 @@ msgstr ""
 "X-Loco-Target-Locale: lt_LT\n"
 "X-Loco-Parser: loco_parse_po"
 
+#: ../notification/notification-add.php:45 ../notification/notification-edit.php:61
+msgid "Please select notification mail subject. Use templates menu to create new."
+msgstr ""
+
+#: ../notification/notification-add.php:144 ../notification/notification-edit.php:
+#: 164
+msgid "(Use templates menu to create new)"
+msgstr ""
+
 #. URI of the plugin
 msgid "https://www.icegram.com"
 msgstr ""
 
-#: ../email-subscribers.php:75
+#: ../email-subscribers.php:95
 msgctxt "timezone date format"
 msgid "Y-m-d H:i:s"
 msgstr ""
@@ -58,6 +67,12 @@ msgid ""
 "directly in the list."
 msgstr ""
 
+#: ../settings/settings-edit.php:117
+msgid ""
+"Select image size for {{POSTIMAGE}} to be shown in the Post Notification "
+"Emails."
+msgstr ""
+
 #: ../settings/settings-edit.php:136
 msgid "Notify Admin when a new subscriber signs up"
 msgstr ""
@@ -79,7 +94,7 @@ msgstr ""
 #: ../settings/settings-edit.php:157
 msgid ""
 "Content for the admin email whenever a new subscriber signs up and is "
-"confirmed.<br />(Available Keywords: ###NAME###, ###EMAIL###, ###GROUP###)"
+"confirmed.<br />Available Keywords: {{NAME}}, {{EMAIL}}, {{GROUP}}"
 msgstr ""
 
 #: ../settings/settings-edit.php:165
@@ -88,8 +103,8 @@ msgstr ""
 
 #: ../settings/settings-edit.php:172
 msgid ""
-"Content for the email report which will be sent to admin.<br />(Available "
-"Keywords: ###COUNT###, ###UNIQUE###, ###STARTTIME###, ###ENDTIME###)"
+"Content for the email report which will be sent to admin.<br />Available "
+"Keywords: {{COUNT}}, {{UNIQUE}}, {{STARTTIME}}, {{ENDTIME}}"
 msgstr ""
 
 #: ../settings/settings-edit.php:183
@@ -109,7 +124,7 @@ msgstr ""
 #: ../settings/settings-edit.php:191
 msgid ""
 "Content for the confirmation email to be sent for Double Opt-In whenever a "
-"subscriber signs up.<br />(Available Keywords: ###NAME###, ###LINK###)"
+"subscriber signs up.<br />Available Keywords: {{NAME}}, {{LINK}}"
 msgstr ""
 
 #: ../settings/settings-edit.php:197
@@ -145,7 +160,7 @@ msgstr ""
 msgid ""
 "Content for the subscriber welcome email whenever a user's email is either "
 "confirmed (if Double Opt In) / subscribed (if Single Opt In) successfully."
-"<br />(Available Keywords: ###NAME###, ###GROUP###, ###LINK###)"
+"<br />Available Keywords: {{NAME}}, {{GROUP}}, {{LINK}}"
 msgstr ""
 
 #: ../settings/settings-edit.php:241
@@ -158,7 +173,7 @@ msgstr ""
 #: ../settings/settings-edit.php:248
 msgid ""
 "The text for the unsubscribe link. This text is automatically added with "
-"unsubscribe link in the emails.<br />(Available Keyword: ###LINK###)"
+"unsubscribe link in the emails.<br />Available Keyword: {{LINK}}"
 msgstr ""
 
 #: ../settings/settings-edit.php:255
@@ -183,6 +198,10 @@ msgid ""
 "unsubscribe link from the emails."
 msgstr ""
 
+#: ../settings/settings-edit.php:300
+msgid "Templates Menu"
+msgstr ""
+
 #: ../settings/settings-edit.php:369
 msgid "(Your web host has limits. We suggest 50 emails per hour to be safe.)"
 msgstr ""
@@ -193,8 +212,8 @@ msgstr ""
 
 #: ../settings/settings-edit.php:375
 msgid ""
-"Email to admin whenever a cron URL is triggered from your server. (Available "
-"Keywords: ###DATE###, ###SUBJECT###, ###COUNT###)"
+"Email to admin whenever a cron URL is triggered from your server.<br "
+"/>Available Keywords: {{DATE}}, {{SUBJECT}}, {{COUNT}}"
 msgstr ""
 
 #: ../settings/settings-edit.php:386
@@ -229,7 +248,7 @@ msgid ""
 "does not support cron jobs?</a>"
 msgstr ""
 
-#: ../sentmail/sentmail-preview.php:27 ../compose/compose-preview.php:27
+#: ../sentmail/sentmail-preview.php:27
 msgid "Preview Email"
 msgstr ""
 
@@ -240,31 +259,29 @@ msgid ""
 "a slight variation on how your customer will view the email content."
 msgstr ""
 
-#: ../compose/compose-edit.php:61
-msgid "Successfully updated. "
+#: ../subscribers/view-subscriber-show.php:256
+msgid "Total Subscribers: "
 msgstr ""
 
-#: ../compose/compose-edit.php:98 ../compose/compose-add.php:87
-msgid "Available Keyword: ###POSTTITLE### (For Post Notification only)"
+#: ../templates/template-preview.php:31
+msgid "Template Preview"
 msgstr ""
 
-#: ../compose/compose-edit.php:110 ../compose/compose-add.php:93
-#, php-format
+#: ../templates/template-preview.php:39
+msgid "This is how your email may look."
+msgstr ""
+
+#: ../templates/template-preview.php:41
 msgid ""
-"%s: ###NAME###, ###EMAIL###, ###DATE###, ###POSTTITLE###, ###POSTLINK###, "
-"###POSTIMAGE###, ###POSTDESC###, ###POSTAUTHOR###, ###POSTLINK-WITHTITLE###, "
-"###POSTLINK-ONLY###, ###POSTFULL### (For Post Notification only)"
+"<br><br>This Post Notification preview has replaced keywords from your last "
+"published blog post."
 msgstr ""
 
-#: ../compose/compose-add.php:43
-msgid "Successfully created. "
-msgstr ""
-
-#: ../compose/compose-preview.php:31
+#: ../templates/template-preview.php:43
 msgid ""
-"This is how your email may look. <br>Note: Different email services (like "
-"gmail, yahoo etc) display email content differently. So there could be a "
-"slight variation on how your customer will view the email content."
+"<br><br>Note: Different email services (like gmail, yahoo etc) display email "
+"content differently. So there could be a slight variation on how your "
+"customer will view the email content."
 msgstr ""
 
 #: ../help/help.php:178
@@ -336,7 +353,7 @@ msgid "Easily migrate subscribers from another app using Import & Export."
 msgstr ""
 
 #: ../help/help.php:267
-msgid "Use HTML editor to compose newsletters and post notifications."
+msgid "Use HTML editor to create newsletters and post notifications."
 msgstr ""
 
 #: ../help/help.php:270
@@ -375,6 +392,10 @@ msgstr ""
 msgid "Additional form settings"
 msgstr ""
 
+#: ../help/help.php:308
+msgid "General Plugin Configuration"
+msgstr ""
+
 #: ../help/help.php:311
 #, php-format
 msgid "Modify %s"
@@ -394,43 +415,47 @@ msgstr ""
 msgid "How to change/update/translate any texts from the plugin?"
 msgstr ""
 
-#: ../help/help.php:333
-msgid "Usage"
+#: ../help/help.php:326
+msgid "How to check sent emails?"
 msgstr ""
 
-#: ../help/help.php:336
-msgid "Compose and Send Newsletter Emails"
+#: ../help/help.php:338
+msgid "Create and Send Newsletter Emails"
 msgstr ""
 
-#: ../help/help.php:339
-msgid "Compose and Send Post Notification Emails when new posts are published"
-msgstr ""
-
-#: ../help/help.php:342
-msgid "Keywords in the Post Notifications"
-msgstr ""
-
-#: ../help/help.php:345
-msgid "Send a test post notification email to myself/testgroup"
+#: ../help/help.php:341
+msgid "Keywords in the Newsletters"
 msgstr ""
 
 #: ../help/help.php:348
-msgid "Check sent emails"
+msgid "Create and Send Post Notification Emails when new posts are published"
 msgstr ""
 
-#: ../help/help.php:355
+#: ../help/help.php:351
+msgid "Keywords in the Post Notifications"
+msgstr ""
+
+#: ../help/help.php:354
+msgid "Send a test post notification email to myself/testgroup"
+msgstr ""
+
+#: ../help/help.php:359
 msgid "Cron Job Setup"
 msgstr ""
 
-#: ../help/help.php:361
+#: ../help/help.php:362
+msgid "What is Cron and how to Schedule Cron Emails?"
+msgstr ""
+
+#: ../help/help.php:365
 msgid "Schedule Cron Emails in cPanel"
 msgstr ""
 
-#: ../help/help.php:364
+#: ../help/help.php:368
 msgid "Schedule Cron Emails in Parallels Plesk"
 msgstr ""
 
-#: ../help/help.php:367
+#: ../help/help.php:371
 msgid "Hosting doesn’t support Cron Jobs?"
 msgstr ""
 
@@ -442,90 +467,90 @@ msgstr ""
 msgid "FAQ's"
 msgstr ""
 
-#: ../help/help.php:389
+#: ../help/help.php:388
 msgid "Want to do more? Here's how.."
 msgstr ""
 
-#: ../help/help.php:392
+#: ../help/help.php:391
 msgid "Allow Subscribers to get subscribed to any group"
 msgstr ""
 
-#: ../help/help.php:397
+#: ../help/help.php:396
 msgid "Using our free "
 msgstr ""
 
-#: ../help/help.php:398
+#: ../help/help.php:397
 msgid "Group Selector"
 msgstr ""
 
-#: ../help/help.php:399
+#: ../help/help.php:398
 msgid ""
 "plugin, you can extend Email Subscribers Form functionality by providing an "
 "grouping option right next to the form."
 msgstr ""
 
-#: ../help/help.php:402
+#: ../help/help.php:401
 msgid "The user can then subscribe to whichever group most appeals to them."
 msgstr ""
 
-#: ../help/help.php:405
+#: ../help/help.php:404
 msgid "For example: Subscribe either to Updates or to Offers."
 msgstr ""
 
-#: ../help/help.php:409
+#: ../help/help.php:408
 msgid "Show your subscribe form inside attractive popups"
 msgstr ""
 
-#: ../help/help.php:414
+#: ../help/help.php:413
 msgid ""
 "Don't limit your subscriber form to a widget. Embed it within popups, hello "
 "bars, slide-ins, sidebars, full screen popups etc."
 msgstr ""
 
-#: ../help/help.php:417
+#: ../help/help.php:416
 msgid "Using Email Subscribers you can achieve this easily with our free plugin "
 msgstr ""
 
-#: ../help/help.php:421
+#: ../help/help.php:420
 msgid ""
 "Icegram's beautiful designs instantly capture user attention and help "
 "increase sign-ups to your WordPress website."
 msgstr ""
 
-#: ../help/help.php:424 ../help/help.php:444
+#: ../help/help.php:423 ../help/help.php:443
 #, php-format
 msgid "How to %s"
 msgstr ""
 
-#: ../help/help.php:424
+#: ../help/help.php:423
 msgid "show subscribe form inside a popup"
 msgstr ""
 
-#: ../help/help.php:428
+#: ../help/help.php:427
 msgid "Get beautiful and elegant form styles"
 msgstr ""
 
-#: ../help/help.php:434
+#: ../help/help.php:433
 msgid "Email subscribers easily integrates with another free plugin "
 msgstr ""
 
-#: ../help/help.php:435
+#: ../help/help.php:434
 msgid "Rainmaker"
 msgstr ""
 
-#: ../help/help.php:438
+#: ../help/help.php:437
 msgid ""
 "Rainmaker extends the core features of Email Subscribers and provides "
 "elegant form styles."
 msgstr ""
 
-#: ../help/help.php:441
+#: ../help/help.php:440
 msgid ""
 "These styles are well designed and beautify your subscription form making it "
 "more appealing."
 msgstr ""
 
-#: ../help/help.php:444
+#: ../help/help.php:443
 msgid "add Rainmaker’s form in Email Subscribers"
 msgstr ""
 
@@ -533,41 +558,114 @@ msgstr ""
 msgid "Email sent successfully. "
 msgstr ""
 
-#: ../classes/es-register.php:193
+#: ../classes/es-register.php:168 ../classes/es-register.php:169 ../classes/es-
+#: register.php:805 ../classes/es-register.php:806 ../classes/es-register.php:811
+msgid "Templates"
+msgstr ""
+
+#: ../classes/es-register.php:184
 msgid "<span style=\"color:#f18500;font-weight:bolder;\">Help & Info</span>"
 msgstr ""
 
-#: ../classes/es-register.php:765
+#: ../classes/es-register.php:201
+msgctxt "view-subscriber-enhanced-select"
+msgid ""
+"Do you want to resend confirmation email? Also please note, this will update "
+"subscriber current status to 'Unconfirmed'."
+msgstr ""
+
+#: ../classes/es-register.php:215
+msgctxt "notification-enhanced-select"
+msgid "Please select notification mail subject. Use templates menu to create new."
+msgstr ""
+
+#: ../classes/es-register.php:704 ../classes/es-register.php:761
 msgctxt "timezone date format"
 msgid "Y-m-d"
 msgstr ""
 
-#: ../classes/es-register.php:795
-msgid "Post Notifications more often than Newsletter"
+#: ../classes/es-register.php:746
+msgid ""
+"Compose is now changed to <b>Templates</b> and Keyword structure has been "
+"simplified. All your previously created templates and keywords have been "
+"automatically updated to the new structure.<br>"
 msgstr ""
 
-#: ../classes/es-register.php:797
-msgid "Newsletter more often than Post Notifications"
+#: ../classes/es-register.php:747
+msgid "Check all the changes&nbsp;&nbsp;"
 msgstr ""
 
-#: ../classes/es-register.php:799
-msgid "Post Notification &amp; Newsletter equally"
+#: ../classes/es-register.php:747
+msgid "No thanks, I know about it already."
 msgstr ""
 
-#: ../classes/es-register.php:817
-msgid "Using Double Opt In"
+#: ../classes/es-register.php:796
+#, php-format
+msgid "Email Subscribers version: <strong>%s</strong>"
+msgstr ""
+
+#: ../classes/es-register.php:807 ../classes/es-register.php:808
+msgid "Add new Template"
+msgstr ""
+
+#: ../classes/es-register.php:809
+msgid "Edit Templates"
+msgstr ""
+
+#: ../classes/es-register.php:810
+msgid "New Templates"
+msgstr ""
+
+#: ../classes/es-register.php:812
+msgid "View Templates"
+msgstr ""
+
+#: ../classes/es-register.php:813
+msgid "Search Templates"
+msgstr ""
+
+#: ../classes/es-register.php:814
+msgid "No Templates found"
+msgstr ""
+
+#: ../classes/es-register.php:815
+msgid "No Templates found in Trash"
+msgstr ""
+
+#: ../classes/es-register.php:818
+msgid "Thumbnail (For Visual Representation only)"
 msgstr ""
 
 #: ../classes/es-register.php:819
-msgid "Using Single Opt In"
+msgid "Set thumbnail"
 msgstr ""
 
-#: ../classes/es-register.php:868
-msgid "Nah, I don't like improvements"
+#: ../classes/es-register.php:856
+msgid "Template Type"
 msgstr ""
 
-#: ../classes/es-register.php:874
-msgid "Next"
+#: ../classes/es-register.php:922
+msgid "Available Keyword for Post Notification: {{POSTTITLE}}"
+msgstr ""
+
+#: ../classes/es-register.php:925
+msgid "Select your Email Template Type"
+msgstr ""
+
+#: ../classes/es-register.php:975
+msgid "Preview Template"
+msgstr ""
+
+#: ../classes/es-register.php:989
+#, php-format
+msgid ""
+"%s for Post Notification: {{NAME}}, {{EMAIL}}, {{DATE}}, {{POSTTITLE}}, "
+"{{POSTLINK}}, {{POSTIMAGE}}, {{POSTDESC}}, {{POSTAUTHOR}}, {{POSTLINK-"
+"WITHTITLE}}, {{POSTLINK-ONLY}}, {{POSTFULL}}"
+msgstr ""
+
+#: ../classes/es-register.php:990
+msgid "<br/><br/>Available Keywords for Newsletter: {{NAME}}, {{EMAIL}}"
 msgstr ""
 
 #: ../notification/notification-add.php:33
@@ -577,12 +675,6 @@ msgstr "Prašome pasirinkti prenumeratorių grupę."
 #: ../notification/notification-add.php:39
 msgid "Please select notification status."
 msgstr "Prašome pasirinkti pranešimo statusą."
-
-#: ../notification/notification-add.php:45 ../notification/notification-edit.php:61
-msgid "Please select notification mail subject. Use compose menu to create new."
-msgstr ""
-"Prašome pasirinkti pranešimo laiško temą. Norėdami sukurti naują, naudokite "
-"meniu \"Sukurti\"."
 
 #: ../notification/notification-add.php:51 ../notification/notification-edit.php:67
 msgid "Please select post categories."
@@ -600,114 +692,105 @@ msgstr "Pridėti pranešimą"
 #: 54 ../notification/notification-edit.php:124 ../settings/settings-edit.php:43 .
 #: ./sentmail/sentmail-preview.php:28 ../sentmail/sentmail-show.php:94 ..
 #: sentmail/deliverreport-show.php:58 ../subscribers/view-subscriber-import.php:
-#: 146 ../subscribers/view-subscriber-show.php:246 ../subscribers/view-subscriber-
+#: 146 ../subscribers/view-subscriber-show.php:247 ../subscribers/view-subscriber-
 #: export.php:38 ../subscribers/view-subscriber-add.php:114 ../subscribers/view-
 #: subscriber-edit.php:113 ../subscribers/view-subscriber-sync.php:92 ..
-#: compose/compose-edit.php:86 ../compose/compose-add.php:75 ../compose/compose-
-#: show.php:66 ../compose/compose-preview.php:28 ../sendmail/sendmail.php:94
+#: templates/template-preview.php:32 ../sendmail/sendmail.php:94
 msgid "Help"
 msgstr "Pagalba"
 
-#: ../notification/notification-add.php:120
+#: ../notification/notification-add.php:121
 msgid "Select Subscribers Group"
 msgstr "Pasirinkite prenumeratorių grupę"
 
-#: ../notification/notification-add.php:124 ../notification/notification-add.php:
-#: 148 ../notification/notification-edit.php:135 ../notification/notification-
-#: edit.php:168 ../subscribers/view-subscriber-import.php:190 ../subscribers/view-
+#: ../notification/notification-add.php:125 ../notification/notification-add.php:
+#: 149 ../notification/notification-edit.php:136 ../notification/notification-
+#: edit.php:169 ../subscribers/view-subscriber-import.php:190 ../subscribers/view-
 #: subscriber-add.php:162 ../subscribers/view-subscriber-edit.php:162 ..
-#: subscribers/view-subscriber-sync.php:119 ../sendmail/sendmail.php:110 ..
-#: sendmail/sendmail.php:137 ../sendmail/sendmail.php:151
+#: subscribers/view-subscriber-sync.php:119 ../sendmail/sendmail.php:111 ..
+#: sendmail/sendmail.php:138 ../sendmail/sendmail.php:152
 msgid "Select"
 msgstr "Pasirinkite"
 
-#: ../notification/notification-add.php:142 ../notification/notification-edit.php:
-#: 162
+#: ../notification/notification-add.php:143 ../notification/notification-edit.php:
+#: 163
 msgid "Select Notification Email Subject"
 msgstr "Pasirinkite pranešimo laiško temą"
 
-#: ../notification/notification-add.php:143 ../notification/notification-edit.php:
-#: 163
-msgid "(Use compose menu to create new)"
-msgstr "(Norėdami sukurti naują, naudokite meniu Kurti)"
-
-#: ../notification/notification-add.php:167 ../notification/notification-edit.php:
-#: 190
+#: ../notification/notification-add.php:168 ../notification/notification-edit.php:
+#: 191
 msgid "Select Post Categories"
 msgstr "Pasirinkite įrašo kategorijas"
 
-#: ../notification/notification-add.php:195 ../notification/notification-edit.php:
-#: 225
+#: ../notification/notification-add.php:196 ../notification/notification-edit.php:
+#: 226
 msgid "Check All"
 msgstr "Žymėti viską"
 
-#: ../notification/notification-add.php:196 ../notification/notification-edit.php:
-#: 226
+#: ../notification/notification-add.php:197 ../notification/notification-edit.php:
+#: 227
 msgid "Uncheck All"
 msgstr "Nežymėti nieko"
 
-#: ../notification/notification-add.php:202 ../notification/notification-edit.php:
-#: 233
+#: ../notification/notification-add.php:203 ../notification/notification-edit.php:
+#: 234
 msgid "Select your Custom Post Type"
 msgstr "Pasirinkite pasirinktinio įrašo tipą"
 
-#: ../notification/notification-add.php:203 ../notification/notification-edit.php:
-#: 234
+#: ../notification/notification-add.php:204 ../notification/notification-edit.php:
+#: 235
 msgid "(Optional)"
 msgstr "(Neprivalomas)"
 
-#: ../notification/notification-add.php:232 ../notification/notification-edit.php:
-#: 268
+#: ../notification/notification-add.php:233 ../notification/notification-edit.php:
+#: 269
 msgid "No Custom Post Types Available"
 msgstr "Nėra laisvų pasirinktinio įrašo tipų"
 
-#: ../notification/notification-add.php:239 ../notification/notification-edit.php:
-#: 275
+#: ../notification/notification-add.php:240 ../notification/notification-edit.php:
+#: 276
 msgid "Select Notification Status when a new post is published"
 msgstr "Pasirinkite pranešimo statusą, kai naujas įrašas yra paskelbiamas"
 
-#: ../notification/notification-add.php:243 ../notification/notification-show.php:
-#: 130 ../notification/notification-edit.php:279 ../sendmail/sendmail.php:138
+#: ../notification/notification-add.php:244 ../notification/notification-show.php:
+#: 130 ../notification/notification-edit.php:280 ../sendmail/sendmail.php:139
 msgid "Send email immediately"
 msgstr "Siųsti laišką nedelsiant"
 
-#: ../notification/notification-add.php:244 ../notification/notification-show.php:
-#: 132 ../notification/notification-edit.php:280
+#: ../notification/notification-add.php:245 ../notification/notification-show.php:
+#: 132 ../notification/notification-edit.php:281
 msgid "Add to cron and send email via cron job"
 msgstr ""
 "Pridėti prie periodinių užduočių (cron) ir siųsti laiškus naudojant "
 "periodines užduotis (cron job)"
 
-#: ../notification/notification-add.php:245 ../notification/notification-edit.php:
-#: 281
+#: ../notification/notification-add.php:246 ../notification/notification-edit.php:
+#: 282
 msgid "Disable email notification"
 msgstr "Išjungti pranešimą el. paštu"
 
-#: ../notification/notification-add.php:253 ../notification/notification-edit.php:
-#: 290 ../subscribers/view-subscriber-edit.php:191 ../compose/compose-edit.php:
-#: 123 ../compose/compose-add.php:105
+#: ../notification/notification-add.php:254 ../notification/notification-edit.php:
+#: 291 ../subscribers/view-subscriber-edit.php:191
 msgid "Save"
 msgstr "Saugoti"
 
 #: ../notification/notification-show.php:21 ../notification/notification-edit.php:
 #: 20 ../sentmail/sentmail-preview.php:18 ../sentmail/sentmail-show.php:22 ..
-#: subscribers/view-subscriber-edit.php:22 ../compose/compose-edit.php:20 ..
-#: compose/compose-show.php:33 ../compose/compose-preview.php:18
+#: subscribers/view-subscriber-edit.php:22
 msgid "Oops, selected details does not exists."
 msgstr "Oi, pažymėti duomenys neegzistuoja."
 
-#: ../notification/notification-show.php:35 ../sentmail/sentmail-show.php:36 ..
-#: compose/compose-show.php:47
+#: ../notification/notification-show.php:35 ../sentmail/sentmail-show.php:36
 msgid "Selected record deleted."
 msgstr "Pasirinktas įrašas ištrintas."
 
-#: ../notification/notification-show.php:52 ../classes/es-register.php:180 ..
-#: classes/es-register.php:181
+#: ../notification/notification-show.php:52 ../help/help.php:345 ../classes/es-
+#: register.php:171 ../classes/es-register.php:172
 msgid "Post Notifications"
 msgstr "Pranešimai apie įrašus"
 
 #: ../notification/notification-show.php:53 ../notification/notification-edit.php:
-#: 123 ../compose/compose-edit.php:85 ../compose/compose-show.php:65
+#: 123
 msgid "Add New"
 msgstr "Pridėti naują"
 
@@ -720,7 +803,7 @@ msgstr ""
 "prenumeratoriams, kai paskelbiamas naujas įrašas jūsų svetainėje."
 
 #: ../notification/notification-show.php:68 ../notification/notification-show.php:
-#: 76 ../compose/compose-show.php:77 ../compose/compose-show.php:85
+#: 76
 msgid "Email Subject"
 msgstr "Laiško tema"
 
@@ -740,19 +823,17 @@ msgid "Notification Status"
 msgstr "Pranešimo statusas"
 
 #: ../notification/notification-show.php:100 ../subscribers/view-subscriber-show.
-#: php:404 ../compose/compose-show.php:103 ../compose/compose-preview.php:52
+#: php:417 ../templates/template-preview.php:35
 msgid "Edit"
 msgstr "Redaguoti"
 
 #: ../notification/notification-show.php:103 ../subscribers/view-subscriber-show.
-#: php:287 ../subscribers/view-subscriber-show.php:409 ../compose/compose-show.
-#: php:104
+#: php:301 ../subscribers/view-subscriber-show.php:422
 msgid "Delete"
 msgstr "Trinti"
 
 #: ../notification/notification-show.php:143 ../sentmail/sentmail-show.php:180 ..
-#: sentmail/deliverreport-show.php:124 ../subscribers/view-subscriber-show.php:
-#: 432 ../compose/compose-show.php:117
+#: sentmail/deliverreport-show.php:124 ../subscribers/view-subscriber-show.php:456
 msgid "No records available."
 msgstr "Nėra įrašų."
 
@@ -772,8 +853,8 @@ msgstr "Pranešimas sėkmingai atnaujintas."
 msgid "Edit Notification"
 msgstr "Redaguoti pranešimą"
 
-#: ../notification/notification-edit.php:131 ../subscribers/view-subscriber-show.
-#: php:289
+#: ../notification/notification-edit.php:132 ../subscribers/view-subscriber-show.
+#: php:303
 msgid "Update Subscribers Group"
 msgstr "Atnaujinti prenumeratorių grupę"
 
@@ -810,8 +891,8 @@ msgstr "Periodinės užduotys (cron)"
 msgid "User Roles"
 msgstr "Vartotojo vaidmenys"
 
-#: ../settings/settings-edit.php:42 ../classes/es-register.php:186 ../classes/es-
-#: register.php:187
+#: ../settings/settings-edit.php:42 ../classes/es-register.php:177 ../classes/es-
+#: register.php:178
 msgid "Settings"
 msgstr "Nustatymai"
 
@@ -852,8 +933,8 @@ msgid "Double Opt In"
 msgstr "Dvigubas patvirtinimas"
 
 #: ../settings/settings-edit.php:110 ../subscribers/view-subscriber-import.php:
-#: 178 ../subscribers/view-subscriber-show.php:312 ../subscribers/view-subscriber-
-#: show.php:339 ../subscribers/view-subscriber-add.php:151 ../subscribers/view-
+#: 178 ../subscribers/view-subscriber-show.php:326 ../subscribers/view-subscriber-
+#: show.php:356 ../subscribers/view-subscriber-add.php:151 ../subscribers/view-
 #: subscriber-edit.php:150
 msgid "Single Opt In"
 msgstr "Viengubas patvirtinimas"
@@ -861,14 +942,6 @@ msgstr "Viengubas patvirtinimas"
 #: ../settings/settings-edit.php:116
 msgid "Image Size"
 msgstr "Paveikslėlio dydis"
-
-#: ../settings/settings-edit.php:117
-msgid ""
-"Select image size for ###POSTIMAGE### to be shown in the Post Notification "
-"Emails."
-msgstr ""
-"Pasirinkite vaizdo dydį ###POSTIMAGE###, kuris bus rodomas pranešimų apie "
-"įrašus laiškuose."
 
 #: ../settings/settings-edit.php:121
 msgid "Full Size"
@@ -878,7 +951,7 @@ msgstr "Visas dydis"
 msgid "Medium Size"
 msgstr "Vidutinis dydis"
 
-#: ../settings/settings-edit.php:123
+#: ../settings/settings-edit.php:123 ../classes/es-register.php:857
 msgid "Thumbnail"
 msgstr "Miniatiūra"
 
@@ -903,12 +976,12 @@ msgstr ""
 "turite nustatyti TAIP."
 
 #: ../settings/settings-edit.php:142 ../settings/settings-edit.php:217 ..
-#: subscribers/view-subscriber-sync.php:107 ../classes/es-register.php:1144
+#: subscribers/view-subscriber-sync.php:107 ../classes/es-register.php:1126
 msgid "YES"
 msgstr "Taip"
 
 #: ../settings/settings-edit.php:143 ../settings/settings-edit.php:218 ..
-#: subscribers/view-subscriber-sync.php:106 ../classes/es-register.php:1145
+#: subscribers/view-subscriber-sync.php:106 ../classes/es-register.php:1127
 msgid "NO"
 msgstr "Ne"
 
@@ -984,16 +1057,12 @@ msgstr "Administratorius/redaktorius"
 msgid "Administrator/Editor/Author/Contributor"
 msgstr "Administratorius/redaktorius/autorius/pagalbininkas"
 
-#: ../settings/settings-edit.php:300
-msgid "Compose Menu"
-msgstr "Kurti meniu"
-
 #: ../settings/settings-edit.php:312
 msgid "Post Notifications Menu"
 msgstr "Pranešimų apie įrašus meniu"
 
-#: ../settings/settings-edit.php:324 ../sendmail/sendmail.php:93 ../classes/es-
-#: register.php:183 ../classes/es-register.php:184
+#: ../settings/settings-edit.php:324 ../help/help.php:335 ../sendmail/sendmail.
+#: php:93 ../classes/es-register.php:174 ../classes/es-register.php:175
 msgid "Newsletters"
 msgstr "Naujienlaiškio siuntimas"
 
@@ -1059,7 +1128,7 @@ msgstr "Sinchronizuoti įskiepio lenteles"
 msgid "Click to sync tables"
 msgstr "Spauskite jei norite sinchronizuoti lenteles"
 
-#: ../sentmail/sentmail-preview.php:62
+#: ../sentmail/sentmail-preview.php:53
 msgid "Back"
 msgstr "Atgal"
 
@@ -1075,8 +1144,8 @@ msgstr "&lt;&lt;"
 msgid " &gt;&gt; "
 msgstr "&gt;&gt;"
 
-#: ../sentmail/sentmail-show.php:93 ../classes/es-register.php:189 ../classes/es-
-#: register.php:190
+#: ../sentmail/sentmail-show.php:93 ../classes/es-register.php:180 ../classes/es-
+#: register.php:181
 msgid "Reports"
 msgstr "Ataskaitos"
 
@@ -1091,8 +1160,7 @@ msgid "View Reports"
 msgstr "Peržiūrėti ataskaitas"
 
 #: ../sentmail/sentmail-show.php:108 ../sentmail/sentmail-show.php:121 ..
-#: compose/compose-edit.php:102 ../compose/compose-show.php:80 ..
-#: compose/compose-show.php:88
+#: classes/es-register.php:905
 msgid "Preview"
 msgstr "Peržiūra"
 
@@ -1102,8 +1170,7 @@ msgstr "Tipas"
 
 #: ../sentmail/sentmail-show.php:110 ../sentmail/sentmail-show.php:123 ..
 #: sentmail/deliverreport-show.php:70 ../sentmail/deliverreport-show.php:81 ..
-#: subscribers/view-subscriber-show.php:362 ../subscribers/view-subscriber-show.
-#: php:375 ../compose/compose-edit.php:114 ../compose/compose-add.php:97
+#: subscribers/view-subscriber-show.php:290
 msgid "Status"
 msgstr "Statusas"
 
@@ -1125,9 +1192,8 @@ msgid "Total"
 msgstr "Viso"
 
 #: ../sentmail/sentmail-show.php:115 ../sentmail/sentmail-show.php:128 ..
-#: subscribers/view-subscriber-show.php:365 ../subscribers/view-subscriber-show.
-#: php:378 ../subscribers/view-subscriber-export.php:48 ../subscribers/view-
-#: subscriber-export.php:56
+#: subscribers/view-subscriber-show.php:293 ../subscribers/view-subscriber-
+#: export.php:48 ../subscribers/view-subscriber-export.php:56
 msgid "Action"
 msgstr "Veiksmas"
 
@@ -1212,20 +1278,20 @@ msgid "Import Email Addresses"
 msgstr "Importuoti el. pašto adresus"
 
 #: ../subscribers/view-subscriber-import.php:143 ../subscribers/view-subscriber-
-#: show.php:242 ../subscribers/view-subscriber-export.php:35 ../subscribers/view-
+#: show.php:243 ../subscribers/view-subscriber-export.php:35 ../subscribers/view-
 #: subscriber-add.php:110 ../subscribers/view-subscriber-edit.php:109 ..
 #: subscribers/view-subscriber-sync.php:89
 msgid "Add New Subscriber"
 msgstr "Pridėti naują prenumeratorių"
 
 #: ../subscribers/view-subscriber-import.php:144 ../subscribers/view-subscriber-
-#: show.php:244 ../subscribers/view-subscriber-add.php:112 ../subscribers/view-
+#: show.php:245 ../subscribers/view-subscriber-add.php:112 ../subscribers/view-
 #: subscriber-edit.php:111 ../subscribers/view-subscriber-sync.php:91
 msgid "Export"
 msgstr "Eksportuoti"
 
 #: ../subscribers/view-subscriber-import.php:145 ../subscribers/view-subscriber-
-#: show.php:245 ../subscribers/view-subscriber-export.php:37 ../subscribers/view-
+#: show.php:246 ../subscribers/view-subscriber-export.php:37 ../subscribers/view-
 #: subscriber-add.php:113 ../subscribers/view-subscriber-edit.php:112 ..
 #: subscribers/view-subscriber-sync.php:143
 msgid "Sync"
@@ -1248,19 +1314,19 @@ msgid "Select Subscribers Email Status"
 msgstr "Pasirinkite prenumeratoriaus el. pašto statusą"
 
 #: ../subscribers/view-subscriber-import.php:175 ../subscribers/view-subscriber-
-#: show.php:309 ../subscribers/view-subscriber-show.php:336 ../subscribers/view-
+#: show.php:323 ../subscribers/view-subscriber-show.php:353 ../subscribers/view-
 #: subscriber-add.php:148 ../subscribers/view-subscriber-edit.php:147
 msgid "Confirmed"
 msgstr "Patvirtinta"
 
 #: ../subscribers/view-subscriber-import.php:176 ../subscribers/view-subscriber-
-#: show.php:310 ../subscribers/view-subscriber-show.php:337 ../subscribers/view-
+#: show.php:324 ../subscribers/view-subscriber-show.php:354 ../subscribers/view-
 #: subscriber-add.php:149 ../subscribers/view-subscriber-edit.php:148
 msgid "Unconfirmed"
 msgstr "Nepatvirtintas"
 
 #: ../subscribers/view-subscriber-import.php:177 ../subscribers/view-subscriber-
-#: show.php:311 ../subscribers/view-subscriber-show.php:338 ../subscribers/view-
+#: show.php:325 ../subscribers/view-subscriber-show.php:355 ../subscribers/view-
 #: subscriber-add.php:150 ../subscribers/view-subscriber-edit.php:149
 msgid "Unsubscribed"
 msgstr "Nutraukė prenumeratą"
@@ -1275,14 +1341,13 @@ msgid "(or)"
 msgstr "(arba)"
 
 #: ../subscribers/view-subscriber-import.php:210 ../subscribers/view-subscriber-
-#: show.php:243 ../subscribers/view-subscriber-export.php:36 ../subscribers/view-
+#: show.php:244 ../subscribers/view-subscriber-export.php:36 ../subscribers/view-
 #: subscriber-add.php:111 ../subscribers/view-subscriber-edit.php:110 ..
 #: subscribers/view-subscriber-sync.php:90
 msgid "Import"
 msgstr "Importuoti"
 
-#: ../subscribers/view-subscriber-show.php:17 ../compose/compose-show.php:14 ..
-#: sendmail/sendmail.php:18
+#: ../subscribers/view-subscriber-show.php:17 ../sendmail/sendmail.php:18
 msgid "Click Here"
 msgstr "Spauskite čia"
 
@@ -1307,8 +1372,8 @@ msgid "Confirmation emails Resent Successfully."
 msgstr "Patvirtinimo laiškai pakartotinai išsiųsti sėkmingai."
 
 #: ../subscribers/view-subscriber-show.php:100 ../subscribers/view-subscriber-
-#: show.php:139 ../subscribers/view-subscriber-show.php:177 ../subscribers/view-
-#: subscriber-show.php:216
+#: show.php:139 ../subscribers/view-subscriber-show.php:178 ../subscribers/view-
+#: subscriber-show.php:217
 msgid "No record was selected."
 msgstr "Nebuvo pasirinktas įrašas."
 
@@ -1318,121 +1383,113 @@ msgstr ""
 "Norėdami išsiųsti patvirtinimo laišką, prašome pakeisti prenumeravimo "
 "variantą į \"Dvigubas patvirtinimas\"."
 
-#: ../subscribers/view-subscriber-show.php:163
+#: ../subscribers/view-subscriber-show.php:164
 msgid "Subscribers Group updated."
 msgstr "Atnaujinta prenumeratorių grupė."
 
-#: ../subscribers/view-subscriber-show.php:168
+#: ../subscribers/view-subscriber-show.php:169
 msgid "Please select New group to update."
 msgstr "Prašome pasirinkti naują grupę atnaujinimui."
 
-#: ../subscribers/view-subscriber-show.php:202
+#: ../subscribers/view-subscriber-show.php:203
 msgid "Subscribers Status updated."
 msgstr "Prenumeratorių būsena atnaujinta."
 
-#: ../subscribers/view-subscriber-show.php:207
+#: ../subscribers/view-subscriber-show.php:208
 msgid "Please select New Status to update."
 msgstr "Prašome pasirinkti naują būseną atnaujinimui."
 
-#: ../subscribers/view-subscriber-show.php:241 ../classes/es-register.php:174 ..
-#: classes/es-register.php:175
+#: ../subscribers/view-subscriber-show.php:242 ../classes/es-register.php:165 ..
+#: classes/es-register.php:166
 msgid "Subscribers"
 msgstr "Prenumeratoriai"
 
-#: ../subscribers/view-subscriber-show.php:252
-#, php-format
-msgid "Total Subscribers: %s"
-msgstr "Prenumeratorių iš viso: %s"
-
-#: ../subscribers/view-subscriber-show.php:254
+#: ../subscribers/view-subscriber-show.php:258
 #, php-format
 msgid "Active Subscribers: %s"
 msgstr "Aktyvių prenumeratorių: %s"
 
-#: ../subscribers/view-subscriber-show.php:286
-msgid "Bulk Actions"
-msgstr "Masiniai veiksmai"
-
-#: ../subscribers/view-subscriber-show.php:288 ../subscribers/view-subscriber-
-#: show.php:417
-msgid "Resend Confirmation"
-msgstr "Persiųsti patvirtinimą dar kartą"
-
-#: ../subscribers/view-subscriber-show.php:290
-msgid "Update Subscribers Status"
-msgstr "Atnaujinti prenumeratorių būseną"
-
-#: ../subscribers/view-subscriber-show.php:293
-msgid "Select Group"
-msgstr "Pasirinkti grupę"
-
-#: ../subscribers/view-subscriber-show.php:308
-msgid "Select Status"
-msgstr "Pasirinkite būseną"
-
-#: ../subscribers/view-subscriber-show.php:314
-msgid "Apply"
-msgstr "Tinkinti"
-
-#: ../subscribers/view-subscriber-show.php:318
-msgid "All Groups"
-msgstr "Visos grupės"
-
-#: ../subscribers/view-subscriber-show.php:335
-msgid "All Status"
-msgstr "Visos būsenos"
-
-#: ../subscribers/view-subscriber-show.php:342
-msgid "1 to 500 emails"
-msgstr "Nuo 1 iki 500 laiškų"
-
-#: ../subscribers/view-subscriber-show.php:343
-msgid "501 to 1000"
-msgstr "Nuo 501 iki 1000"
-
-#: ../subscribers/view-subscriber-show.php:344
-msgid "1001 to 1500"
-msgstr "Nuo 1001 iki 1500"
-
-#: ../subscribers/view-subscriber-show.php:345
-msgid "1501 to 2000"
-msgstr "Nuo 1501 iki 2000"
-
-#: ../subscribers/view-subscriber-show.php:346
-msgid "2001 to 4000"
-msgstr "Nuo 2001 iki 4000"
-
-#: ../subscribers/view-subscriber-show.php:347
-msgid "4001 to 6000"
-msgstr "Nuo 4001 iki 6000"
-
-#: ../subscribers/view-subscriber-show.php:348
-msgid "6001 to 10000"
-msgstr "Nuo 6001 iki 10000"
-
-#: ../subscribers/view-subscriber-show.php:349
-msgid "Display All"
-msgstr "Rodyti visus"
-
-#: ../subscribers/view-subscriber-show.php:360 ../subscribers/view-subscriber-
-#: show.php:373
+#: ../subscribers/view-subscriber-show.php:288
 msgid "Email Address"
 msgstr "El. pašto adresas"
 
-#: ../subscribers/view-subscriber-show.php:361 ../subscribers/view-subscriber-
-#: show.php:374 ../classes/es-register.php:1086 ../classes/es-loadwidget.php:28
+#: ../subscribers/view-subscriber-show.php:289 ../classes/es-register.php:1068 ..
+#: classes/es-loadwidget.php:28
 msgid "Name"
 msgstr "Vardas"
 
-#: ../subscribers/view-subscriber-show.php:363 ../subscribers/view-subscriber-
-#: show.php:376
+#: ../subscribers/view-subscriber-show.php:291
 msgid "Group"
 msgstr "Grupė"
 
-#: ../subscribers/view-subscriber-show.php:364 ../subscribers/view-subscriber-
-#: show.php:377
+#: ../subscribers/view-subscriber-show.php:292
 msgid "Signup Date & Time<br>(Y-M-D H:I:S)"
 msgstr "Registracijos data ir laikas<br>(Y-M-D H:I:S)"
+
+#: ../subscribers/view-subscriber-show.php:300
+msgid "Bulk Actions"
+msgstr "Masiniai veiksmai"
+
+#: ../subscribers/view-subscriber-show.php:302 ../subscribers/view-subscriber-
+#: show.php:413
+msgid "Resend Confirmation"
+msgstr "Persiųsti patvirtinimą dar kartą"
+
+#: ../subscribers/view-subscriber-show.php:304
+msgid "Update Subscribers Status"
+msgstr "Atnaujinti prenumeratorių būseną"
+
+#: ../subscribers/view-subscriber-show.php:307
+msgid "Select Group"
+msgstr "Pasirinkti grupę"
+
+#: ../subscribers/view-subscriber-show.php:322
+msgid "Select Status"
+msgstr "Pasirinkite būseną"
+
+#: ../subscribers/view-subscriber-show.php:328
+msgid "Apply"
+msgstr "Tinkinti"
+
+#: ../subscribers/view-subscriber-show.php:335
+msgid "All Groups"
+msgstr "Visos grupės"
+
+#: ../subscribers/view-subscriber-show.php:352
+msgid "All Status"
+msgstr "Visos būsenos"
+
+#: ../subscribers/view-subscriber-show.php:359
+msgid "1 to 500 emails"
+msgstr "Nuo 1 iki 500 laiškų"
+
+#: ../subscribers/view-subscriber-show.php:360
+msgid "501 to 1000"
+msgstr "Nuo 501 iki 1000"
+
+#: ../subscribers/view-subscriber-show.php:361
+msgid "1001 to 1500"
+msgstr "Nuo 1001 iki 1500"
+
+#: ../subscribers/view-subscriber-show.php:362
+msgid "1501 to 2000"
+msgstr "Nuo 1501 iki 2000"
+
+#: ../subscribers/view-subscriber-show.php:363
+msgid "2001 to 4000"
+msgstr "Nuo 2001 iki 4000"
+
+#: ../subscribers/view-subscriber-show.php:364
+msgid "4001 to 6000"
+msgstr "Nuo 4001 iki 6000"
+
+#: ../subscribers/view-subscriber-show.php:365
+msgid "6001 to 10000"
+msgstr "Nuo 6001 iki 10000"
+
+#: ../subscribers/view-subscriber-show.php:366
+msgid "Display All"
+msgstr "Rodyti visus"
 
 #: ../subscribers/view-subscriber-export.php:34
 msgid "Export Email Addresses"
@@ -1595,63 +1652,6 @@ msgstr "Sinchronizuoti naujai registruotus vartotojus prenumeratorių sąraše"
 msgid "Select group to add newly registered users to"
 msgstr "Pasirinkite grupę, į kurią įtraukti naujai registruotus vartotojus"
 
-#: ../compose/compose-edit.php:48 ../compose/compose-add.php:31
-msgid "Please enter template heading."
-msgstr "Prašome įvesti šablono antraštę."
-
-#: ../compose/compose-edit.php:84
-msgid "Edit Email"
-msgstr "Redaguoti el. paštą"
-
-#: ../compose/compose-edit.php:89 ../compose/compose-add.php:78
-msgid "Select your Email Template"
-msgstr "Pasirinkite laiško šabloną"
-
-#: ../compose/compose-edit.php:91 ../compose/compose-add.php:80
-msgid "Newsletter"
-msgstr "Naujienlaiškis"
-
-#: ../compose/compose-edit.php:92 ../compose/compose-add.php:81
-msgid "Post Notification"
-msgstr "Pranešimas apie įrašą"
-
-#: ../compose/compose-edit.php:96 ../compose/compose-add.php:85
-msgid "Enter your Email Subject"
-msgstr "Įveskite laiško temą"
-
-#: ../compose/compose-edit.php:100 ../compose/compose-add.php:89
-msgid "Enter Content for your Email"
-msgstr "Įveskite laiško turinį"
-
-#: ../compose/compose-edit.php:110 ../compose/compose-add.php:93
-msgid "Available Keywords"
-msgstr "Galimi raktažodžiai"
-
-#: ../compose/compose-edit.php:116 ../compose/compose-add.php:99
-msgid "Published"
-msgstr "Paskelbta"
-
-#: ../compose/compose-edit.php:118 ../compose/compose-add.php:101
-msgid "Please select your mail status"
-msgstr "Prašome pasirinkti laiško statusą."
-
-#: ../compose/compose-add.php:74
-msgid "Add new Email"
-msgstr "Pridėti naują el. paštą"
-
-#: ../compose/compose-show.php:64 ../classes/es-register.php:177 ../classes/es-
-#: register.php:178
-msgid "Compose"
-msgstr "Kurti naują"
-
-#: ../compose/compose-show.php:78 ../compose/compose-show.php:86
-msgid "Email Template"
-msgstr "Laiško šablonas"
-
-#: ../compose/compose-show.php:79 ../compose/compose-show.php:87
-msgid "Actions"
-msgstr "Veiksmai"
-
 #: ../export/export-email-address.php:45 ../export/export-email-address.php:49
 msgid "Unexpected url submit has been detected"
 msgstr "Buvo aptiktas nenumatytas nuorodos pateikimas"
@@ -1679,7 +1679,7 @@ msgstr ""
 "Ačiū, kad įdiegėte ir tikimės, kad jums patiks naudoti El. pašto "
 "prenumeratorius."
 
-#: ../help/help.php:183 ../classes/es-register.php:1096 ../classes/es-loadwidget.
+#: ../help/help.php:183 ../classes/es-register.php:1078 ../classes/es-loadwidget.
 #: php:38
 msgid "Subscribe"
 msgstr "Prenumeruoti"
@@ -1699,10 +1699,10 @@ msgstr "dovanojant mums"
 
 #: ../help/help.php:288 ../help/help.php:299 ../help/help.php:302 ../help/help.
 #: php:314 ../help/help.php:317 ../help/help.php:320 ../help/help.php:323 ..
-#: help/help.php:336 ../help/help.php:339 ../help/help.php:342 ../help/help.php:
-#: 345 ../help/help.php:348 ../help/help.php:358 ../help/help.php:361 ..
-#: help/help.php:364 ../help/help.php:367 ../help/help.php:377 ../help/help.php:
-#: 380 ../help/help.php:382
+#: help/help.php:326 ../help/help.php:338 ../help/help.php:341 ../help/help.php:
+#: 348 ../help/help.php:351 ../help/help.php:354 ../help/help.php:362 ..
+#: help/help.php:365 ../help/help.php:368 ../help/help.php:371 ../help/help.php:
+#: 377 ../help/help.php:380 ../help/help.php:382
 #, php-format
 msgid "%s"
 msgstr "%s"
@@ -1719,10 +1719,6 @@ msgstr "Kaip nukreipti prenumeratorius į naują puslapį po sėkmingos registra
 msgid "How to add captcha in Subscribe form of Email Subscribers?"
 msgstr "Kaip pridėti captcha Email Subscribers prenumeratos formoje?"
 
-#: ../help/help.php:308
-msgid "General Plugin Settings"
-msgstr "Bendrieji įskiepio nustatymai"
-
 #: ../help/help.php:314
 msgid "How to Import or Export Email Addresses?"
 msgstr "Kaip importuoti ar eksportuoti el. pašto adresus?"
@@ -1734,10 +1730,6 @@ msgstr "Kaip pridėti ar atnaujinti esamų prenumeratorių grupę bei statusą?"
 #: ../help/help.php:323
 msgid "How to add Unsubscribe link in emails?"
 msgstr "Kaip pridėti prenumeratos atsisakymo nuorodą laiškuose?"
-
-#: ../help/help.php:358
-msgid "How to Schedule Cron Emails?"
-msgstr "Kaip nustatyti cron laiško siuntimo laiką?"
 
 #: ../help/help.php:377
 msgid "Subscribers are not receiving Emails?"
@@ -1771,32 +1763,32 @@ msgstr "Oi.. Iškilo šiek tiek klaidų. Laiškas nesiunčiamas."
 msgid "Use this to send newsletter emails to your subscribers."
 msgstr "Naudokite naujienlaiškių savo prenumeratoriams siuntimui."
 
-#: ../sendmail/sendmail.php:105
+#: ../sendmail/sendmail.php:106
 msgid "Select Email Subject from available list"
 msgstr "Pasirinkite laiško temą iš sąrašo"
 
-#: ../sendmail/sendmail.php:132
+#: ../sendmail/sendmail.php:133
 msgid "Select Email Type"
 msgstr "Pasirinkite laiško tipą"
 
-#: ../sendmail/sendmail.php:139
+#: ../sendmail/sendmail.php:140
 msgid "Send email via cron job"
 msgstr "Siųsti laišką naudojant periodines užduotis (cron job)"
 
-#: ../sendmail/sendmail.php:146
+#: ../sendmail/sendmail.php:147
 msgid "Select Subscribers group to Send Email"
 msgstr "Pasirinkite prenumeratorių grupę, kuriai siųsti laišką"
 
-#: ../sendmail/sendmail.php:178
+#: ../sendmail/sendmail.php:179
 msgid "Recipients : 0 "
 msgstr "Gavėjai: 0"
 
-#: ../sendmail/sendmail.php:180
+#: ../sendmail/sendmail.php:181
 #, php-format
 msgid "Recipients : %s"
 msgstr "Gavėjai: %s"
 
-#: ../sendmail/sendmail.php:183
+#: ../sendmail/sendmail.php:184
 msgid ""
 "<br><br><strong>Your Recipients count is above 100.<br>We strongly recommend "
 "that you change above Mail Type to Cron and Send Mail via Cron Job."
@@ -1807,11 +1799,11 @@ msgstr ""
 "laiškus naudojant periodines užduotis (cron).</strong><br>Norėdami gauti "
 "daugiau informacijos spauskite Pagalba."
 
-#: ../sendmail/sendmail.php:194 ../sendmail/sendmail.php:196
+#: ../sendmail/sendmail.php:195 ../sendmail/sendmail.php:197
 msgid "Send Email"
 msgstr "Siųsti laišką"
 
-#: ../sendmail/sendmail.php:199
+#: ../sendmail/sendmail.php:200
 msgid "Reset"
 msgstr "Atstatyti"
 
@@ -1862,75 +1854,66 @@ msgid "<span style=\"color:#993399;\">Immediately</span>"
 msgstr "<span style=\"color:#993399;\">Nedelsiant</span>"
 
 #. Name of the plugin
-#: ../classes/es-register.php:171 ../classes/es-register.php:172 ../classes/es-
-#: register.php:782
+#: ../classes/es-register.php:162 ../classes/es-register.php:163 ../classes/es-
+#: register.php:817
 msgid "Email Subscribers"
 msgstr "Email Subscribers"
 
-#: ../classes/es-register.php:192
+#: ../classes/es-register.php:183
 msgid "Help & Info"
 msgstr "Pagalba ir informacija"
 
-#: ../classes/es-register.php:204
+#: ../classes/es-register.php:195
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please enter subscriber email address."
 msgstr "Prašome įvesti prenumeratoriaus el. pašto adresą."
 
-#: ../classes/es-register.php:205
+#: ../classes/es-register.php:196
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please select subscriber email status."
 msgstr "Prašome pasirinkti prenumeratoriaus el. pašto statusą."
 
-#: ../classes/es-register.php:206
+#: ../classes/es-register.php:197
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please select or create group for this subscriber."
 msgstr "Prašome pasirinkti arba sukurti grupę šiam prenumeratoriui."
 
-#: ../classes/es-register.php:207
+#: ../classes/es-register.php:198
 msgctxt "view-subscriber-enhanced-select"
 msgid "Do you want to delete this record?"
 msgstr "Ar norite ištrinti šį įrašą?"
 
-#: ../classes/es-register.php:208
+#: ../classes/es-register.php:199
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please select the bulk action."
 msgstr "Prašome pasirinkti masinį veiksmą."
 
-#: ../classes/es-register.php:209
+#: ../classes/es-register.php:200
 msgctxt "view-subscriber-enhanced-select"
 msgid "Are you sure you want to delete selected records?"
 msgstr "Ar tikrai norite trinti pasirinktus įrašus?"
 
-#: ../classes/es-register.php:210
-msgctxt "view-subscriber-enhanced-select"
-msgid ""
-"Do you want to resend confirmation email? \\nAlso please note, this will "
-"update subscriber current status to 'Unconfirmed'."
-msgstr ""
-"Ar norite pakartotinai išsiųsti patvirtinimo laišką? \\nAtkreipkite dėmesį, "
-"kad bus prenumeratoriaus dabartinis statusas bus pakeistas į \"Nepatvirtinta\"."
-
-#: ../classes/es-register.php:211
+#: ../classes/es-register.php:202
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please select new subscriber group."
 msgstr "Prašome pasirinkti naują prenumeratorių grupę."
 
-#: ../classes/es-register.php:212
+#: ../classes/es-register.php:203
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please select new status for subscribers"
 msgstr "Prašome pasirinkti naują prenumeratorių statusą"
 
-#: ../classes/es-register.php:213
+#: ../classes/es-register.php:204
 msgctxt "view-subscriber-enhanced-select"
 msgid "Do you want to update subscribers group?"
 msgstr "Ar norite atnaujinti prenumeratorių grupę?"
 
-#: ../classes/es-register.php:214
+#: ../classes/es-register.php:205
 msgctxt "view-subscriber-enhanced-select"
 msgid "Do you want to update subscribers status?"
 msgstr "Ar norite atnaujinti prenumeratorių statusą?"
 
-#: ../classes/es-register.php:215
+#: ../classes/es-register.php:206
 msgctxt "view-subscriber-enhanced-select"
 msgid ""
 "Please select only csv file. Please check official website for csv structure."
@@ -1939,49 +1922,32 @@ msgstr ""
 "Prašome pasirinkti tik CSV failą. CSV struktūrą pasitikrinkite oficialioje "
 "svetainėje."
 
-#: ../classes/es-register.php:223
-msgctxt "compose-enhanced-select"
-msgid "Please enter the Email Subject."
-msgstr "Prašome įvesti laiško temą"
-
-#: ../classes/es-register.php:224
-msgctxt "compose-enhanced-select"
-msgid "Do you want to delete this record?"
-msgstr "Ar norite ištrinti šį įrašą?"
-
-#: ../classes/es-register.php:232
+#: ../classes/es-register.php:214
 msgctxt "notification-enhanced-select"
 msgid "Please select subscribers group."
 msgstr "Prašome pasirinkti prenumeratorių grupę."
 
-#: ../classes/es-register.php:233
-msgctxt "notification-enhanced-select"
-msgid "Please select notification mail subject. Use compose menu to create new."
-msgstr ""
-"Prašome pasirinkti pranešimo laiško temą. Norėdami sukurti naują, naudokite "
-"meniu \"Sukurti\"."
-
-#: ../classes/es-register.php:234
+#: ../classes/es-register.php:216
 msgctxt "notification-enhanced-select"
 msgid "Please select notification status."
 msgstr "Prašome pasirinkti pranešimo statusą."
 
-#: ../classes/es-register.php:235
+#: ../classes/es-register.php:217
 msgctxt "notification-enhanced-select"
 msgid "Do you want to delete this record?"
 msgstr "Ar norite ištrinti šį įrašą?"
 
-#: ../classes/es-register.php:243
+#: ../classes/es-register.php:225
 msgctxt "sendmail-enhanced-select"
 msgid "Please select your mail subject."
 msgstr "Prašome pasirinkti laiško temą."
 
-#: ../classes/es-register.php:244
+#: ../classes/es-register.php:226
 msgctxt "sendmail-enhanced-select"
 msgid "Please select your mail type."
 msgstr "Prašome pasirinkti laiško tipą."
 
-#: ../classes/es-register.php:245
+#: ../classes/es-register.php:227
 msgctxt "sendmail-enhanced-select"
 msgid ""
 "Have you double checked your selected group? If so, let's go ahead and send "
@@ -1990,52 +1956,52 @@ msgstr ""
 "Ar du kartus patikrinote pasirinktą grupę? Jei taip, tęskite toliau ir "
 "siųskite tai."
 
-#: ../classes/es-register.php:253
+#: ../classes/es-register.php:235
 msgctxt "sentmail-enhanced-select"
 msgid "Do you want to delete this record?"
 msgstr "Ar norite ištrinti šį įrašą?"
 
-#: ../classes/es-register.php:254
+#: ../classes/es-register.php:236
 msgctxt "sentmail-enhanced-select"
 msgid "Do you want to delete all records except latest 10?"
 msgstr "Ar norite ištrinti visus, išskyrus 10 naujausių, įrašus?"
 
-#: ../classes/es-register.php:262
+#: ../classes/es-register.php:244
 msgctxt "cron-enhanced-select"
 msgid "Please select enter number of mails you want to send per hour/trigger."
 msgstr "Prašome pasirinkti laiškų kiekį, kurį norite siųsti per valandą/veiksmą."
 
-#: ../classes/es-register.php:263
+#: ../classes/es-register.php:245
 msgctxt "cron-enhanced-select"
 msgid "Please enter the mail count, only number."
 msgstr "Prašome įvesti laiškų kiekį (tik skaičius)."
 
-#: ../classes/es-register.php:276
+#: ../classes/es-register.php:258
 msgctxt "widget-enhanced-select"
 msgid "Please enter email address"
 msgstr "Prašome įvesti el. pašto adresą"
 
-#: ../classes/es-register.php:277
+#: ../classes/es-register.php:259
 msgctxt "widget-enhanced-select"
 msgid "Please provide a valid email address"
 msgstr "Prašome nurodyti teisingą el. pašto adresą"
 
-#: ../classes/es-register.php:278
+#: ../classes/es-register.php:260
 msgctxt "widget-enhanced-select"
 msgid "loading..."
 msgstr "kraunasi..."
 
-#: ../classes/es-register.php:279
+#: ../classes/es-register.php:261
 msgctxt "widget-enhanced-select"
 msgid "Cannot create XMLHTTP instance"
 msgstr "Nepavyko sukurti XMLHTTP instancijos"
 
-#: ../classes/es-register.php:280
+#: ../classes/es-register.php:262
 msgctxt "widget-enhanced-select"
 msgid "Successfully Subscribed."
 msgstr "Užsiprenumeravote sėkmingai."
 
-#: ../classes/es-register.php:281
+#: ../classes/es-register.php:263
 msgctxt "widget-enhanced-select"
 msgid ""
 "Your subscription was successful! Within a few minutes, kindly check the "
@@ -2046,57 +2012,57 @@ msgstr ""
 "savo pašto dėžutė ir patvirtinkite savo prenumeratą. Jei negalite rasti savo "
 "pašto dėžutėje laiško, patikrinkite savo šlamšto aplanką."
 
-#: ../classes/es-register.php:282
+#: ../classes/es-register.php:264
 msgctxt "widget-enhanced-select"
 msgid "Email Address already exists!"
 msgstr "El. pašto adresas jau egzistuoja!"
 
-#: ../classes/es-register.php:283
+#: ../classes/es-register.php:265
 msgctxt "widget-enhanced-select"
 msgid "Oops.. Unexpected error occurred."
 msgstr "Oi.. įvyko netikėta klaida."
 
-#: ../classes/es-register.php:284
+#: ../classes/es-register.php:266
 msgctxt "widget-enhanced-select"
 msgid "Invalid email address"
 msgstr "Neteisingas el. pašto adresas"
 
-#: ../classes/es-register.php:285
+#: ../classes/es-register.php:267
 msgctxt "widget-enhanced-select"
 msgid "Please try after some time"
 msgstr "Bandykite vėliau"
 
-#: ../classes/es-register.php:286
+#: ../classes/es-register.php:268
 msgctxt "widget-enhanced-select"
 msgid "There was a problem with the request"
 msgstr "Iškilo problema dėl užklausos"
 
-#: ../classes/es-register.php:293
+#: ../classes/es-register.php:275
 msgctxt "widget-page-enhanced-select"
 msgid "Please enter email address"
 msgstr "Prašome įvesti el. pašto adresą"
 
-#: ../classes/es-register.php:294
+#: ../classes/es-register.php:276
 msgctxt "widget-page-enhanced-select"
 msgid "Please provide a valid email address"
 msgstr "Prašome nurodyti teisingą el. pašto adresą"
 
-#: ../classes/es-register.php:295
+#: ../classes/es-register.php:277
 msgctxt "widget-page-enhanced-select"
 msgid "loading..."
 msgstr "kraunasi..."
 
-#: ../classes/es-register.php:296
+#: ../classes/es-register.php:278
 msgctxt "widget-page-enhanced-select"
 msgid "Cannot create XMLHTTP instance"
 msgstr "Nepavyko sukurti XMLHTTP instancijos"
 
-#: ../classes/es-register.php:297
+#: ../classes/es-register.php:279
 msgctxt "widget-page-enhanced-select"
 msgid "Successfully Subscribed."
 msgstr "Užsiprenumeravote sėkmingai."
 
-#: ../classes/es-register.php:298
+#: ../classes/es-register.php:280
 msgctxt "widget-page-enhanced-select"
 msgid ""
 "Your subscription was successful! Within a few minutes, kindly check the "
@@ -2107,119 +2073,32 @@ msgstr ""
 "savo pašto dėžutė ir patvirtinkite savo prenumeratą. Jei negalite rasti savo "
 "pašto dėžutėje laiško, patikrinkite savo šlamšto aplanką."
 
-#: ../classes/es-register.php:299
+#: ../classes/es-register.php:281
 msgctxt "widget-page-enhanced-select"
 msgid "Email Address already exists!"
 msgstr "El. pašto adresas jau egzistuoja!"
 
-#: ../classes/es-register.php:300
+#: ../classes/es-register.php:282
 msgctxt "widget-page-enhanced-select"
 msgid "Oops.. Unexpected error occurred."
 msgstr "Oi.. įvyko netikėta klaida."
 
-#: ../classes/es-register.php:301
+#: ../classes/es-register.php:283
 msgctxt "widget-page-enhanced-select"
 msgid "Invalid email address"
 msgstr "Neteisingas el. pašto adresas"
 
-#: ../classes/es-register.php:302
+#: ../classes/es-register.php:284
 msgctxt "widget-page-enhanced-select"
 msgid "Please try after some time"
 msgstr "Bandykite vėliau"
 
-#: ../classes/es-register.php:303
+#: ../classes/es-register.php:285
 msgctxt "widget-page-enhanced-select"
 msgid "There was a problem with the request"
 msgstr "Iškilo problema dėl užklausos"
 
 #: ../classes/es-register.php:782
-msgid "is getting even better!"
-msgstr "dar geriau!"
-
-#: ../classes/es-register.php:783
-msgid "But I need you to"
-msgstr "Bet man reikia jums"
-
-#: ../classes/es-register.php:783
-msgid "help me prioritize"
-msgstr "padėti man nustatyti prioritetus"
-
-#: ../classes/es-register.php:783
-msgid "Please send your response today."
-msgstr "Prašome atsiųsti savo atsakymą šiandien."
-
-#: ../classes/es-register.php:790
-msgid "Here's how you use ES:"
-msgstr "Štai kaip jūs naudojate ES:"
-
-#: ../classes/es-register.php:803
-msgid "Have "
-msgstr "Turi"
-
-#: ../classes/es-register.php:803
-msgid " Active Subscribers"
-msgstr "Aktyvūs prenumeratoriai"
-
-#: ../classes/es-register.php:804
-msgid "Post "
-msgstr "Įrašas"
-
-#: ../classes/es-register.php:804
-msgid " blog per week"
-msgstr "įrašų per savaitę"
-
-#: ../classes/es-register.php:808
-msgid "Send emails via Cron"
-msgstr "Siųsti laiškus naudojant periodines užduotis (cron)"
-
-#: ../classes/es-register.php:810
-msgid "Send emails Immediately"
-msgstr "Siųsti laiškus nedelsiant"
-
-#: ../classes/es-register.php:837
-msgid "How soon do you want these new features?"
-msgstr "Kaip greitai jūs norite šių naujų funkcijų?"
-
-#: ../classes/es-register.php:841
-msgid "Beautiful Email Designs"
-msgstr "Gražūs laiškų dizainai"
-
-#: ../classes/es-register.php:842 ../classes/es-register.php:847 ../classes/es-
-#: register.php:852 ../classes/es-register.php:857
-msgid "Right now!"
-msgstr "Dabar!"
-
-#: ../classes/es-register.php:843 ../classes/es-register.php:848 ../classes/es-
-#: register.php:853 ../classes/es-register.php:858
-msgid "Soon"
-msgstr "Greitai"
-
-#: ../classes/es-register.php:844 ../classes/es-register.php:849 ../classes/es-
-#: register.php:854 ../classes/es-register.php:859
-msgid "Later"
-msgstr "Vėliau"
-
-#: ../classes/es-register.php:846
-msgid "Spam Check, Scheduling... (Better Email Delivery)"
-msgstr "Šlamšto tikrinimas, nustatymas... (geresnis laiškų pristatymas)"
-
-#: ../classes/es-register.php:851
-msgid "Discard Fake / Bouncing Emails"
-msgstr "Išmesti neteisingus / neveikiančius el. pašto adresus"
-
-#: ../classes/es-register.php:856
-msgid "Advanced Reporting"
-msgstr "Detalesnės ataskaitos"
-
-#: ../classes/es-register.php:884
-msgid "Thank you!"
-msgstr "Ačiū!"
-
-#: ../classes/es-register.php:885
-msgid "No issues, have a nice day!"
-msgstr "Jokių problemų, gražios dienos!"
-
-#: ../classes/es-register.php:977
 msgid ""
 "If you like <strong>Email Subscribers</strong>, please consider leaving us a "
 "<a target=\"_blank\" href=\"https://wordpress.org/support/plugin/email-"
@@ -2231,22 +2110,34 @@ msgstr ""
 "subscribers/reviews/?filter=5#new-post\">&#9733;&#9733;&#9733;&#9733;&#9733;"
 "</a> reitingu. Icegram dėkoja iš anksto!"
 
-#: ../classes/es-register.php:1091 ../classes/es-loadwidget.php:33
+#: ../classes/es-register.php:927
+msgid "Newsletter"
+msgstr "Naujienlaiškis"
+
+#: ../classes/es-register.php:928
+msgid "Post Notification"
+msgstr "Pranešimas apie įrašą"
+
+#: ../classes/es-register.php:989
+msgid "Available Keywords"
+msgstr "Galimi raktažodžiai"
+
+#: ../classes/es-register.php:1073 ../classes/es-loadwidget.php:33
 msgid "Email *"
 msgstr "El. paštas *"
 
-#: ../classes/es-register.php:1134
+#: ../classes/es-register.php:1116
 msgid "Widget Title"
 msgstr "Valdiklio pavadinimas"
 
-#: ../classes/es-register.php:1138
+#: ../classes/es-register.php:1120
 msgid "Short description about subscription form"
 msgstr "Trumpas prenumeratos formos aprašymas"
 
-#: ../classes/es-register.php:1142
+#: ../classes/es-register.php:1124
 msgid "Display Name Field"
 msgstr "Rodyti vardo lauką"
 
-#: ../classes/es-register.php:1149
+#: ../classes/es-register.php:1131
 msgid "Subscriber Group"
 msgstr "Prenumeratoriaus grupė"
