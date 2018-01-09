@@ -5,7 +5,6 @@
 
 			<div class="content-blocks-wrapper grid">
 				<?php foreach ( $blocks as $key => $block ) {
-					outpre($block);
 					$hasImage = ( strcmp( $block["type"], "bloc image" ) == 0 );
 					$hasText  = ( strcmp( $block["texte"], '' ) != 0 );
 					$hasLink  = ( strcmp( $block["lien"], '' ) != 0 );

@@ -48,7 +48,7 @@
 
 /* RATIO TEMPLATE = 0.64 */
 .content-blocks-wrapper {
-    width: 930px;
+    width: 1620px;
 
     @media (max-width: 991px) {
         width: 615px;
@@ -148,16 +148,28 @@
                 height: 300px;
             }
             &.block-x-3-2 {
-                width: 615px;
+                width: 630px;
             }
             &.block-y-3-2 {
-                height: 615px;
+                height: 630px;
             }
             &.block-x-3-3 {
-                width: 930px;
+                width: 960px;
             }
             &.block-y-3-3 {
-                height: 930px;
+                height: 960px;
+            }
+            &.block-x-3-4 {
+                width: 1290px;
+            }
+            &.block-y-3-4 {
+                height: 1290px;
+            }
+            &.block-x-3-5 {
+                width: 1620px;
+            }
+            &.block-y-3-5 {
+                height: 1620px;
             }
 
             @media (max-width: 650px) {
