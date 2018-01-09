@@ -56,6 +56,11 @@
 								}
 							} ?>
 						</div>
+						<style>
+							<?php echo '#block-'.$key.':hover .background-image'; ?> {
+								background-image: url("<?php echo $block["image_roll"] ?>")!important;
+							}
+						</style>
 						<?php if ( $hasLink ) {
 							echo '<div class="color-hover"></div>';
 						} ?>
