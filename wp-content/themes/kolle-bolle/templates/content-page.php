@@ -74,7 +74,7 @@
 							itemSelector: '.grid-item',
 							masonry: {
 								columnWidth: 300,
-								gutter: 15
+								gutter: 30
 							},
 							getSortData: {
 								order3: '[data-pos3] parseInt',
@@ -89,7 +89,7 @@
 							itemSelector: '.grid-item',
 							masonry: {
 								columnWidth: 300,
-								gutter: 15
+								gutter: 30
 							},
 							getSortData: {
 								order3: '[data-pos3] parseInt',
@@ -104,7 +104,7 @@
 							itemSelector: '.grid-item',
 							masonry: {
 								columnWidth: 300,
-								gutter: 15
+								gutter: 30
 							},
 							getSortData: {
 								order3: '[data-pos3] parseInt',
