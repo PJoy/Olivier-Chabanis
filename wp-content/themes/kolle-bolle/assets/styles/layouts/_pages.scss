@@ -74,9 +74,9 @@
         .content-block {
             font-weight: 200;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            //display: flex;
+            //justify-content: center;
+            //align-items: center;
 
             margin-bottom: 15px;
 
@@ -113,7 +113,7 @@
 
             &.text-block {
                 color: $blue;
-                text-align: center;
+                //text-align: center;
 
                 &.texte-gras {
                     font-weight: normal;
