@@ -17,7 +17,21 @@
 				}
 			}
 			?>
+			<a href="<?php echo get_home_url(); ?>">
+				<div class="social-link" style="background:
+					url('<?php echo get_template_directory_uri()."/assets/images/instagram.png"; ?>') no-repeat">
+				</div>
+			</a>
+
+			<a href="<?php echo get_home_url(); ?>">
+				<div class="social-link" style="background:
+					url('<?php echo get_template_directory_uri()."/assets/images/pinterest.png"; ?>') no-repeat">
+				</div>
+			</a>
+
 		</nav>
+
+
 	</div>
 
 	<div class="container mobile">
@@ -49,6 +63,7 @@
 			}
 			?>
 		</nav>
+
 	</div>
 </header>
 
