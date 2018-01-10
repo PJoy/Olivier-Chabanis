@@ -66,7 +66,7 @@
             top: 0;
             left: 0;
             right: 0;
-            bottom: 15px;
+            bottom: 30px;
             background: $blueHover;
             display: none;
         }
@@ -78,7 +78,7 @@
             //justify-content: center;
             //align-items: center;
 
-            margin-bottom: 15px;
+            margin-bottom: 30px;
 
             &.title-1-1 {
                 @media (min-width: 650px) {
@@ -94,7 +94,7 @@
                     position: absolute;
                     top: 0;
                     right: 0;
-                    bottom: 15px;
+                    bottom: 30px;
                     left: 0;
                     background-size: cover !important;
                     background-position: 50% !important;
