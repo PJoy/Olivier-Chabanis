@@ -228,22 +228,7 @@
                 }
             }
         }
-
-        a {
-            .content-block:hover .background-image {
-                opacity: 0.7;
-            }
-
-            &:hover {
-                text-decoration: none!important;
-                .color-hover {
-                    display: block;
-                }
-
-
-            }
-        }
-
+        
     }
 }
 
