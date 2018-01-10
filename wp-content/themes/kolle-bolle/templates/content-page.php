@@ -8,6 +8,7 @@
 					$hasImage = ( strcmp( $block["type"], "bloc image" ) == 0 );
 					$hasText  = ( strcmp( $block["texte"], '' ) != 0 );
 					$hasLink  = ( strcmp( $block["lien"], '' ) != 0 );
+					$hasHover = ( strcmp( $block["image_roll"], '' ) != 0 );
 
 					$classes = '';
 					$classes .= ( $hasImage ? 'image-block ' : 'text-block ' );
@@ -18,7 +19,6 @@
 					$classes .= 'block-y-3-' . $block["taille_y_3"] . ' ';
 
 					$data = '';
-
 
 					$outerClasses = "grid-item--width" . $block["taille_x_3"] . ' ';
 
@@ -44,11 +44,15 @@
 								}
 							} ?>
 						</div>
-						<style>
-							<?php echo '#block-'.$key.':hover .background-image'; ?> {
-								background-image: url("<?php echo $block["image_roll"] ?>")!important;
-							}
-						</style>
+
+						<?php if ($hasHover) { ?>
+							<style>
+								<?php echo '#block-'.$key.':hover .background-image'; ?> {
+									background-image: url("<?php echo $block["image_roll"] ?>")!important;
+								}
+							</style>
+						<?php } ?>
+
 						<?php if ( $hasLink ) {
 							echo '<div class="color-hover"></div>';
 						} ?>
