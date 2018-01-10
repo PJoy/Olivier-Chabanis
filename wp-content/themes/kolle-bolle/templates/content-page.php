@@ -13,26 +13,14 @@
 					$classes .= ( $hasImage ? 'image-block ' : 'text-block ' );
 					$classes .= ( $hasText ? seoUrl( $block["gabarit"] ) . ' ' : '' );
 
-					$classes .= ( $block["titre_centre"] == "oui") ? '' : "title-".$block["sous-bloc_titre"]." ";
 
 					$classes .= 'block-x-3-' . $block["taille_x_3"] . ' ';
 					$classes .= 'block-y-3-' . $block["taille_y_3"] . ' ';
-					$classes .= 'block-x-2-' . $block["taille_x_2"] . ' ';
-					$classes .= 'block-y-2-' . $block["taille_y_2"] . ' ';
-					$classes .= 'block-x-1-' . $block["taille_x_1"] . ' ';
-					$classes .= 'block-y-1-' . $block["taille_y_1"] . ' ';
 
 					$data = '';
-					$data .= 'data-pos3 = "' . $block["position_3"] . '" ';
-					$data .= 'data-pos2 = "' . $block["position_2"] . '" ';
-					$data .= 'data-pos1 = "' . $block["position_1"] . '" ';
 
-					$doInvert = $block["inversion"];
 
 					$outerClasses = "grid-item--width" . $block["taille_x_3"] . ' ';
-					if ( $doInvert ) {
-						$outerClasses .= "invert invert-" . $block["invert_index"];
-					}
 
 					?>
 					<div class="content-block-outer grid-item <?php echo $outerClasses; ?>" <?php echo $data; ?>>
