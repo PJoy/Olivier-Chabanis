@@ -123,34 +123,34 @@
             }
 
             &.block-x-3-1 {
-                width: 300px;
+                width: #{$xl-block-width};
             }
             &.block-y-3-1 {
-                height: 400px;
+                height: #{$xl-block-height};
             }
             &.block-x-3-2 {
-                width: 630px;
+                width: calc(#{$xl-block-width} * 2 + #{$xl-block-space});
             }
             &.block-y-3-2 {
-                height: 830px;
+                height: calc(#{$xl-block-height} * 2 + #{$xl-block-space});
             }
             &.block-x-3-3 {
-                width: 960px;
+                width: calc(#{$xl-block-width} * 3 + #{$xl-block-space} * 2);
             }
             &.block-y-3-3 {
-                height: 1260px;
+                height: calc(#{$xl-block-height} * 3 + #{$xl-block-space} * 2);
             }
             &.block-x-3-4 {
-                width: 1290px;
+                width: calc(#{$xl-block-width} * 4 + #{$xl-block-space} * 3);
             }
             &.block-y-3-4 {
-                height: 1690px;
+                height: calc(#{$xl-block-height} * 4 + #{$xl-block-space} * 3);
             }
             &.block-x-3-5 {
-                width: 1620px;
+                width: calc(#{$xl-block-width} * 5 + #{$xl-block-space} * 4);
             }
             &.block-y-3-5 {
-                height: 2120px;
+                height: calc(#{$xl-block-height} * 5 + #{$xl-block-space} * 4);
             }
         }
 
