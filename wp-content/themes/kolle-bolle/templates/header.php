@@ -17,13 +17,13 @@
 				}
 			}
 			?>
-			<a href="<?php echo get_home_url(); ?>">
+			<a href="https://www.instagram.com/olivier.chabanis/">
 				<div class="social-link" style="background:
 					url('<?php echo get_template_directory_uri()."/assets/images/instagram.png"; ?>') no-repeat">
 				</div>
 			</a>
 
-			<a href="<?php echo get_home_url(); ?>">
+			<a href="https://www.pinterest.fr/ochabanis/">
 				<div class="social-link" style="background:
 					url('<?php echo get_template_directory_uri()."/assets/images/pinterest.png"; ?>') no-repeat">
 				</div>
