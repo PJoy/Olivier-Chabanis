@@ -23,7 +23,7 @@ header {
             background-size: contain !important;
             width: 40px;
             height: 40px;
-            margin-left: 20px;
+            margin: 0 20px 0 15px;
             float: right;
         }
 
@@ -49,13 +49,31 @@ header {
                 }
             }
         }
-        @media (max-width: 1200px) {
+
+        @media (max-width: 1340px) {
+            .logo {
+                width: 400px!important;
+            }
+
+            .social-link {
+                width: 30px!important;
+                height: 30px!important;
+                margin: 0 15px!important;
+            }
+
+            a.menu-elem {
+                font-size: 22px!important;
+                margin-right: 30px!important;
+            }
+        }
+
+        @media (max-width: 1023px) {
             display: none;
         }
     }
 
     .container.mobile {
-        @media (min-width: 1200px) {
+        @media (min-width: 1024px) {
             display: none;
         }
 
@@ -80,15 +98,8 @@ header {
             width: 30%;
             height: 120px;
             float: right;
-            background-position: bottom 35px right !important;
+            background-position: bottom 49px right !important
 
-
-            @media (min-width: 767px) {
-                background-position: bottom 8px right!important;
-            }
-            @media (min-width: 500px) {
-                background-position: bottom 13px right!important;
-            }
         }
 
         nav.nav-primary {
