@@ -123,35 +123,3 @@
 		}
 		?>
 	</div>
-<?php if (is_front_page()) {
-	include("pages/home.php");
-} elseif ($post->post_name == "nous-contacter") {
-	include ("pages/contact.php");
-} elseif ($post->post_name == "presse") {
-	include ("pages/presse.php");
-} elseif ($post->post_name == "notre-catalogue") {
-
-} elseif ($post->post_name == "newsletter") {
-	include ("pages/newsletter.php");
-} elseif ($post->post_name == "catalogue") {
-	include ("pages/catalogue.php");
-}elseif ($post->post_name == "accessoires") {
-	include ("pages/catalogue.php");
-}elseif ($post->post_name == "bureau") {
-
-}elseif ($post->post_name == "canapes") {
-	include ("pages/catalogue.php");
-}elseif ($post->post_name == "chambre") {
-	include ("pages/catalogue.php");
-}elseif ($post->post_name == "luminaires") {
-	include ("pages/catalogue.php");
-}elseif ($post->post_name == "sejour") {
-	include ("pages/catalogue.php");
-}elseif ($post->post_name == "tables-chaises") {
-	include ("pages/catalogue.php");
-}elseif ($post->post_name == "terrasse") {
-	include ("pages/catalogue.php");
-}elseif ($post->post_name == "recherche") {
-	$search = str_replace(' ', '+', $_GET["term"]);
-	include( "pages/catalogue.php" );
-}
