@@ -64,35 +64,23 @@
 		<script src="<?php echo get_template_directory_uri()."/bower_components/vanilla-lazyload/dist/lazyload.js" ?>"></script>
 
 		<script>
-			if (window.innerWidth < 650) {
+			if (window.innerWidth < 1023) {
 				jQuery('.grid').isotope(
 					{
 						itemSelector: '.grid-item',
 						masonry: {
 							columnWidth: 300,
 							gutter: 30
-						},
-						getSortData: {
-							order3: '[data-pos3] parseInt',
-							order2: '[data-pos2] parseInt',
-							order1: '[data-pos1] parseInt'
-						},
-						sortBy: 'order1'
+						}
 					});
-			} else if (window.innerWidth < 990) {
+			} else if (window.innerWidth < 1620) {
 				jQuery('.grid').isotope(
 					{
 						itemSelector: '.grid-item',
 						masonry: {
-							columnWidth: 300,
-							gutter: 30
-						},
-						getSortData: {
-							order3: '[data-pos3] parseInt',
-							order2: '[data-pos2] parseInt',
-							order1: '[data-pos1] parseInt'
-						},
-						sortBy: 'order2'
+							columnWidth: 190,
+							gutter: 15
+						}
 					});
 			} else {
 				jQuery('.grid').isotope(
@@ -101,13 +89,7 @@
 						masonry: {
 							columnWidth: 300,
 							gutter: 30
-						},
-						getSortData: {
-							order3: '[data-pos3] parseInt',
-							order2: '[data-pos2] parseInt',
-							order1: '[data-pos1] parseInt'
-						},
-						sortBy: 'order3'
+						}
 					});
 			}
 

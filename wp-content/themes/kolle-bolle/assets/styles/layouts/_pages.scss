@@ -44,6 +44,14 @@
 .content-blocks-wrapper {
     width: 1620px;
 
+    @media (max-width: 1620px) {
+        width: 1024px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 300px;
+    }
+
     margin: 0 auto;
     .content-block-outer {
         .color-hover {
@@ -151,6 +159,56 @@
             }
             &.block-y-3-5 {
                 height: calc(#{$xl-block-height} * 5 + #{$xl-block-space} * 4);
+            }
+
+            @media (max-width: 1620px) {
+                &.block-x-3-1 {
+                    width: #{$l-block-width};
+                }
+                &.block-y-3-1 {
+                    height: #{$l-block-height};
+                }
+                &.block-x-3-2 {
+                    width: calc(#{$l-block-width} * 2 + #{$l-block-space});
+                }
+                &.block-y-3-2 {
+                    height: calc(#{$l-block-height} * 2 + #{$l-block-space});
+                }
+                &.block-x-3-3 {
+                    width: calc(#{$l-block-width} * 3 + #{$l-block-space} * 2);
+                }
+                &.block-y-3-3 {
+                    height: calc(#{$l-block-height} * 3 + #{$l-block-space} * 2);
+                }
+                &.block-x-3-4 {
+                    width: calc(#{$l-block-width} * 4 + #{$l-block-space} * 3);
+                }
+                &.block-y-3-4 {
+                    height: calc(#{$l-block-height} * 4 + #{$l-block-space} * 3);
+                }
+                &.block-x-3-5 {
+                    width: calc(#{$l-block-width} * 5 + #{$l-block-space} * 4);
+                }
+                &.block-y-3-5 {
+                    height: calc(#{$l-block-height} * 5 + #{$l-block-space} * 4);
+                }
+            }
+
+            @media (max-width: 1023px) {
+                &.block-x-3-1,
+                &.block-x-3-2,
+                &.block-x-3-3,
+                &.block-x-3-4,
+                &.block-x-3-5 {
+                    width: #{$xl-block-width};
+                }
+                &.block-y-3-1,
+                &.block-y-3-2,
+                &.block-y-3-3,
+                &.block-y-3-4,
+                &.block-y-3-5 {
+                    height: #{$xl-block-height};
+                }
             }
         }
 
