@@ -130,6 +130,7 @@
                 }
             }
 
+
             &.block-x-3-1 {
                 width: #{$xl-block-width};
             }
@@ -194,20 +195,27 @@
                 }
             }
 
+
             @media (max-width: 1023px) {
-                &.block-x-3-1,
-                &.block-x-3-2,
-                &.block-x-3-3,
-                &.block-x-3-4,
-                &.block-x-3-5 {
-                    width: #{$xl-block-width};
+                &:not(.text-block) {
+                    &.block-x-3-1,
+                    &.block-x-3-2,
+                    &.block-x-3-3,
+                    &.block-x-3-4,
+                    &.block-x-3-5 {
+                        width: #{$xl-block-width};
+                    }
+                    &.block-y-3-1,
+                    &.block-y-3-2,
+                    &.block-y-3-3,
+                    &.block-y-3-4,
+                    &.block-y-3-5 {
+                        height: #{$xl-block-height};
+                    }
                 }
-                &.block-y-3-1,
-                &.block-y-3-2,
-                &.block-y-3-3,
-                &.block-y-3-4,
-                &.block-y-3-5 {
-                    height: #{$xl-block-height};
+
+                &.text-block {
+                    height: auto!important;
                 }
             }
         }
