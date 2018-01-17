@@ -12,6 +12,7 @@
 
 				$classes = '';
 				$classes .= ( $hasImage ? 'image-block ' : 'text-block ' );
+				$classes .= ( ( $hasImage && $block['image'] == "") ? 'blank-image-block ' : '');
 				$classes .= ( $hasText ? seoUrl( $block["gabarit"] ) . ' ' : '' );
 
 

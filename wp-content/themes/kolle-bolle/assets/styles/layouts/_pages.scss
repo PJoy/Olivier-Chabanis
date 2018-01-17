@@ -217,6 +217,10 @@
                 &.text-block {
                     height: auto!important;
                 }
+
+                &.blank-image-block {
+                    display: none;
+                }
             }
         }
 
