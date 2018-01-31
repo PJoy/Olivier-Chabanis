@@ -49,7 +49,8 @@
 
 					<?php if ($hasHover) { ?>
 						<style>
-							<?php echo '#block-'.$key.':hover .background-image'; ?> {
+							<?php echo '#block-'.$key.':hover .background-image,
+							#block-'.$key.':active .background-image'; ?> {
 								background-image: url("<?php echo $block["image_roll"] ?>")!important;
 							}
 						</style>
