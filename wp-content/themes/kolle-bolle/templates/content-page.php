@@ -73,6 +73,15 @@
 							gutter: 30
 						}
 					});
+			} else if (window.innerWidth < 1200) {
+				jQuery('.grid').isotope(
+					{
+						itemSelector: '.grid-item',
+						masonry: {
+							columnWidth: 175,
+							gutter: 12
+						}
+					});
 			} else if (window.innerWidth < 1620) {
 				jQuery('.grid').isotope(
 					{
